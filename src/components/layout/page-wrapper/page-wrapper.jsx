@@ -2,15 +2,15 @@ import React from "react";
 import Header from "../header/header";
 import Footer from "../footer/footer";
 import MainPage from "../../pages/main-page/main-page";
-import "./style.css";
+import CatalogPage from '../../pages/catalog-page/catalog-page.jsx';
 
 function PageWrapper() {
   return (
     <>
       <Header />
-      <main className="main-container">
-        <h1>Farm shop</h1>
-        <MainPage />
+      <main className="main main-container">
+        {/*<MainPage />*/}
+        <CatalogPage />
       </main>
       <Footer />
     </>
