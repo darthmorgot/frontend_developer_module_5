@@ -1,16 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-
-:root {
-  --mine-shaft: #333333;
-  --wild-sand: #f6f6f6;
-  --pattens-blue: #d8ecfe;
-  --chrome-white: #e1edce;
-  --chelsea-cucumber: #88aa4d;
-  --linen: #f8ddd7;
-  --flamingo: #f75531;
-  --sea-buckthorn: #fc9b27;
-  --crusta: #fc7427;
-}
+@import "../../vars";
+@import "normalize";
 
 html {
   height: 100%;
@@ -35,8 +24,7 @@ body {
   line-height: 150%;
   font-weight: 400;
   font-style: normal;
-  color: var(--mine-shaft);
-  background-color: indianred;
+  color: $mine-shaft;
 }
 
 .main-container {
@@ -46,7 +34,8 @@ body {
 .wrapper {
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 img {
@@ -80,4 +69,15 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.button {
+  display: block;
+  width: 260px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  background-color: $sea-buckthorn;
+  text-align: center;
+  color: $white;
 }
