@@ -1,0 +1,92 @@
+@import "../../../vars";
+
+.advantages {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &__slogan {
+    display: block;
+    margin-bottom: 64px;
+    text-align: center;
+  }
+
+  &__lists {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+  }
+
+  &__list {
+    width: 540px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
+
+.list {
+  &__item {
+    min-height: 197px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__item--good {
+    background-color: $chrome-white;
+
+    &:first-child {
+      background-image: url("../../../../src/assets/img/icon-eat.svg");
+      background-repeat: no-repeat;
+      background-position: 20px 20px;
+    }
+
+    &:last-child {
+      background-image: url("../../../../src/assets/img/icon-sprout.svg");
+      background-repeat: no-repeat;
+      background-position: 20px 20px;
+    }
+  }
+
+  &__item--bad {
+    background-color: $linen;
+
+    &:first-child {
+      background-image: url("../../../../src/assets/img/icon-garbage.svg");
+      background-repeat: no-repeat;
+      background-position: 20px 20px;
+    }
+
+    &:last-child {
+      background-image: url("../../../../src/assets/img/icon-no-meat.svg");
+      background-repeat: no-repeat;
+      background-position: 20px 20px;
+    }
+  }
+
+  &__header {
+    margin-left: 72px;
+  }
+
+  &__category {
+    padding: 3px 10px;
+    color: $white;
+  }
+
+  &__item--good &__category {
+    background-color: $chelsea-cucumber;
+  }
+
+  &__item--bad &__category {
+    background-color: $flamingo;
+  }
+
+  &__title,
+  &__description {
+    margin: 0;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+}
+
