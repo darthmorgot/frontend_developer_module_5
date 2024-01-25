@@ -1,0 +1,22 @@
+@import "../../../vars";
+
+.about {
+  background-color: $pattens-blue;
+
+  &__wrapper {
+    padding-top: 183px;
+    padding-bottom: 183px;
+    background-image: url("../../../../src/assets/img/back.png");
+    background-repeat: no-repeat;
+    background-position: 100% 30px;
+  }
+
+  &__info {
+    width: 538px;
+  }
+
+  &__title,
+  &__description {
+    margin: 0;
+  }
+}
