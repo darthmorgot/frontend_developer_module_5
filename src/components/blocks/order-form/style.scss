@@ -1,0 +1,100 @@
+@import "../../../vars";
+
+.order {
+  &__form {
+    width: 353px;
+    margin-bottom: 40px;
+  }
+}
+
+.form {
+  &__fieldset {
+    padding: 24px 20px 20px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(0 0 0 / 0.10);
+    box-shadow: 0 0 1px 0 rgba(0 0 0 / 0.04), 0 2px 6px 0 rgba(0 0 0 / 0.04), 0 10px 20px 0 rgba(0 0 0 / 0.04);
+  }
+
+  &__fieldset--select &__title {
+    margin-bottom: 27px;
+  }
+
+  &__fieldset--order &__title {
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+  }
+
+  &__address {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+    }
+
+    input {
+      width: 100%;
+      padding-top: 14px;
+      padding-left: 12px;
+      padding-bottom: 13px;
+      font-size: 14px;
+      border: 1px solid rgba(0 0 0 / 0.10);
+      background: $wild-sand;
+    }
+  }
+
+  &__show-price {
+    span {
+      display: block;
+      margin: 0 0 8px;
+      font-size: 14px;
+    }
+  }
+
+  &__output {
+    display: block;
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  &__fieldset--order &__submit {
+    width: 314px;
+  }
+}
+
+.select-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    margin-bottom: 29px;
+
+    &:last-child {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__label {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input[type=checkbox]:checked+&__mark {
+    background-image: url("../../../../src/assets/img/tick.png");
+    background-color: $sea-buckthorn;
+    background-position: 3px 3px;
+    background-repeat: no-repeat;
+  }
+
+  &__mark {
+    width: 24px;
+    height: 24px;
+    border: 1px solid rgba(0 0 0 / 0.10);
+  }
+}
