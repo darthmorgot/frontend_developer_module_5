@@ -4,13 +4,13 @@ import Footer from "../footer/footer";
 import MainPage from "../../pages/main-page/main-page";
 import CatalogPage from '../../pages/catalog-page/catalog-page.jsx';
 
-function PageWrapper() {
+function PageWrapper({data}) {
   return (
     <>
       <Header />
       <main className="main main-container">
         {/*<MainPage />*/}
-        <CatalogPage />
+        <CatalogPage data={data}/>
       </main>
       <Footer />
     </>
