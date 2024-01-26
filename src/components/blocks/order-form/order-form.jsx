@@ -1,67 +1,31 @@
-import React from 'react';
+import {useState} from 'react';
+import ProductSelectionField from './product-selection-field.jsx';
+import ProductPurchaseField from './product-purchase-field.jsx';
+import './style.scss';
+
+const productList = [
+  {id: 0, content: 'Филе бедра цыпленка', name: 'chicken-thigh-fillet', checked: true},
+  {id: 1, content: 'Филе бедра гуся', name: 'goose-thigh-fillet', checked: true},
+  {id: 2, content: 'Мякоть бедра говяжья', name: 'beef-thigh-flesh', checked: true},
+  {id: 3, content: 'Грудка цыпленка на кости', name: 'chicken-breast-on-the-bone', checked: false},
+  {id: 4, content: 'Голень цыпленка', name: 'drumstick-chicken', checked: false}
+];
 
 function OrderForm() {
-  let [checked, setChecked] = React.useState({
-    isChecked: true,
-    notChecked: false
-  });
+  let [products, setProduct] = useState(productList);
 
-  function handleChange(e) {
-    setChecked(e.target.checked);
+  function handleChange(id, e) {
+    setProduct(products.map(item => item.id !== id ? item : {
+      ...item, checked: e.target.checked
+    }));
   }
 
   return (
     <section className="catalog__order-form order">
       <h2 className="visually-hidden">Форма для заказа товара</h2>
-      <form action="#" className="order__form form">
-        <fieldset className="form__select">
-          <h3 className="form__title">Выберите продукты</h3>
-          <ul className="form__select-list select-list">
-            <li className="select-list__item">
-              <label className="select-list__label">
-                <span className="select-list__name">Филе бедра цыпленка</span>
-                <input type="checkbox" className="select-list__input test" name="chicken-thigh-fillet"
-                       defaultChecked={checked.isChecked} onChange={handleChange}/>
-                <span className="select-list__mark">{checked ? 'x' : 'o'}</span>
-              </label>
-            </li>
-            <li className="select-list__item">
-              <label className="select-list__label">
-                <span className="select-list__name">Филе бедра гуся</span>
-                <input type="checkbox" className="select-list__input" name="goose-thigh-fillet"
-                       defaultChecked={checked.isChecked} onChange={handleChange}/>
-                <span className="select-list__mark">{checked ? 'x' : 'o'}</span>
-              </label>
-            </li>
-            <li className="select-list__item">
-              <label className="select-list__label">
-                <span className="select-list__name">Мякоть бедра говяжья</span>
-                <input type="checkbox" className="select-list__input" name="beef-thigh-flesh"
-                       defaultChecked={checked.isChecked} onChange={handleChange}/>
-                <span className="select-list__mark">{checked ? 'x' : 'o'}</span>
-              </label>
-            </li>
-            <li className="select-list__item">
-              <label className="select-list__label">
-                <span className="select-list__name">Грудка цыпленка на кости</span>
-                <input type="checkbox" className="select-list__input" name=""
-                       defaultChecked={checked.notChecked} onChange={handleChange}/>
-                <span className="select-list__mark">{checked ? 'x' : 'o'}</span>
-              </label>
-            </li>
-            <li className="select-list__item">
-              <label className="select-list__label">
-                <span className="select-list__name">Голень цыпленка</span>
-                <input type="checkbox" className="select-list__input" name=""
-                       defaultChecked={checked.notChecked} onChange={handleChange}/>
-                <span className="select-list__mark">{checked ? 'x' : 'o'}</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset className="form__order">
-          <h3 className="form__title">Сделать заказ</h3>
-        </fieldset>
+      <form action="#" method="post" className="order__form form">
+        <ProductSelectionField products={products} changed={handleChange}/>
+        <ProductPurchaseField />
       </form>
     </section>
   );
