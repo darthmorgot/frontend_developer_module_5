@@ -9,10 +9,14 @@
 
 .form {
   &__fieldset {
-    padding: 24px 20px 20px;
-    margin-bottom: 18px;
+    padding: 23px 20px 20px;
+    margin: 0 0 17px;
     border: 1px solid rgba(0 0 0 / 0.10);
     box-shadow: 0 0 1px 0 rgba(0 0 0 / 0.04), 0 2px 6px 0 rgba(0 0 0 / 0.04), 0 10px 20px 0 rgba(0 0 0 / 0.04);
+  }
+
+  &__fieldset--order {
+    padding-left: 19px;
   }
 
   &__fieldset--select &__title {
@@ -25,11 +29,13 @@
 
   &__title {
     margin: 0;
+    font-size: 18px;
     font-weight: 700;
+    line-height: 150%;
   }
 
   &__address {
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 
     label {
       display: block;
@@ -37,9 +43,9 @@
 
     input {
       width: 100%;
-      padding-top: 14px;
+      padding-top: 16px;
       padding-left: 12px;
-      padding-bottom: 13px;
+      padding-bottom: 14px;
       font-size: 14px;
       border: 1px solid rgba(0 0 0 / 0.10);
       background: $wild-sand;
@@ -49,7 +55,7 @@
   &__show-price {
     span {
       display: block;
-      margin: 0 0 8px;
+      margin: 0 0 5px;
       font-size: 14px;
     }
   }
@@ -68,7 +74,7 @@
 }
 
 .select-list {
-  margin: 0;
+  margin: 0 0 0 -1px;
   padding: 0;
   list-style: none;
 
@@ -96,6 +102,8 @@
   &__mark {
     width: 24px;
     height: 24px;
+    margin-top: 1px;
+    margin-right: -1px;
     border: 1px solid rgba(0 0 0 / 0.10);
   }
 }
