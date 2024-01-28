@@ -1,9 +1,32 @@
+@import "../../../vars";
+
 .header {
+  padding-top: 10px;
+  padding-bottom: 10px;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.04), 0 2px 6px 0 rgba(0, 0, 0, 0.04), 0 10px 20px 0 rgba(0, 0, 0, 0.04);
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+.nav {
+  &__link {
+    cursor: pointer;
+  }
+
+  &__link--home {
+    display: block;
+    margin-top: -5px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+
+    &:focus {
+      outline: 1px solid $crusta;
+      outline-offset: 2px;
+    }
   }
 }
