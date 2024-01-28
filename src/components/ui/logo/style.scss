@@ -1,4 +1,23 @@
+@import "../../../vars";
+
 .logo-link {
   display: flex;
   align-items: center;
+  margin-bottom: 8px;
+  margin-top: 8px;
+
+  &:focus {
+    outline: 1px solid $crusta;
+    outline-offset: 2px;
+  }
+
+  img {
+    margin-right: 24px;
+  }
+
+  span {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 115%;
+  }
 }
