@@ -6,7 +6,7 @@ function Logo() {
   return (
     <a href="/" className="logo-link">
       <img src={logo} alt="Логотип Фермерского магазина"/>
-      <span className="logo__text">Фермерские продукты</span>
+      <span>Фермерские продукты</span>
     </a>
   );
 }
