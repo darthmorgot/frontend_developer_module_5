@@ -1,10 +1,14 @@
 import React from "react";
+import Button from '../../ui/button/button.jsx';
 
-function Nav() {
+function Nav({page, setPage}) {
   return (
     <nav className="nav">
-      <a href="#" className="nav__link button">Купить</a>
-      <a href="#" className="nav__link">Главная</a>
+      {
+        page === 'main-page'
+          ? <Button classButton={'nav__link'} dataButton={'catalog-page'} handleButton={setPage}/>
+          : <a className="nav__link nav__link--home" data-page="main-page" onClick={setPage} tabIndex="0">Главная</a>
+      }
     </nav>
   );
 }
