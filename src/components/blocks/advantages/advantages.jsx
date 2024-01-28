@@ -1,7 +1,8 @@
 import React from 'react';
+import Button from '../../ui/button/button.jsx';
 import './style.scss';
 
-function Advantages() {
+function Advantages({setPage}) {
   return (
     <section className="advantages wrapper">
       <h2 className="visually-hidden">Преимущества фермерских продуктов</h2>
@@ -9,12 +10,12 @@ function Advantages() {
       <div className="advantages__lists">
         <ul className="advantages__list list">
           <li className="list__item list__item--good">
-            <div className="list__header">
+            <div className="list__header list__header--margin-left">
               <span className="list__category">Фермерские продукты</span>
               <h3 className="list__title">Еда намного вкуснее</h3>
             </div>
-            <p className="list__description">Домашняя колбаса из мяса, соли и специй и колбаса из магазина — два
-              настолько разных продукта, что они даже не родственники</p>
+            <p className="list__description">Домашняя колбаса из мяса, соли и специй и колбаса <br/> из магазина — два
+              настолько разных продукта, <br/> что они даже не родственники</p>
           </li>
           <li className="list__item list__item--good">
             <div className="list__header">
@@ -44,7 +45,7 @@ function Advantages() {
           </li>
         </ul>
       </div>
-      <a href="#" className="advantages__link button">Купить</a>
+      <Button classButton={'advantages__link'} dataButton={'catalog-page'} handleButton={setPage}/>
     </section>
   );
 }
