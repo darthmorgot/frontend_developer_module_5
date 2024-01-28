@@ -1,5 +1,5 @@
 import React from 'react';
-import TabsData from './tabs-data.jsx';
+import TabsData from './tabs/tabs-data.jsx';
 import './style.scss';
 
 function CardProduct({products}) {
