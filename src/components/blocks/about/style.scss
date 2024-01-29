@@ -15,15 +15,12 @@
     width: 538px;
   }
 
+  &__info h1 {
+    margin-bottom: 24px;
+  }
+
   &__title,
   &__description {
     margin: 0;
-  }
-
-  &__title {
-    margin-bottom: 24px;
-    font-size: 44px;
-    font-weight: 700;
-    line-height: 115%;
   }
 }
