@@ -1,7 +1,7 @@
 import React from 'react';
 
 function TabDescription({activeTab, item}) {
-  return activeTab === 'tab_1' ? <>
+  return activeTab === 'tab_0' ? <>
       <p>{item.about}</p>
       <p>{item.price} руб. / {item.weight} гр.</p>
     </>
