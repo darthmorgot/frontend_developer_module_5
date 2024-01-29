@@ -1,7 +1,7 @@
 import React from 'react';
 
 function TabSpecification({activeTab, item}) {
-  return activeTab === 'tab_2'
+  return activeTab === 'tab_1'
     ? <dl>
       <div>
         <dt>Масса:</dt>
