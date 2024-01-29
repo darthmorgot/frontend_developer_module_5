@@ -49,6 +49,11 @@
       font-size: 14px;
       border: 1px solid rgba(0 0 0 / 0.10);
       background: $wild-sand;
+
+      &:focus {
+        outline: 1px solid $crusta;
+        outline-offset: 2px;
+      }
     }
   }
 
@@ -92,11 +97,16 @@
     cursor: pointer;
   }
 
-  &__input[type=checkbox]:checked+&__mark {
-    background-image: url("../../../../src/assets/img/tick.png");
+  &__input[type=checkbox]:checked + &__mark {
+    background-image: url("Images/tick.png");
     background-color: $sea-buckthorn;
     background-position: 3px 3px;
     background-repeat: no-repeat;
+  }
+
+  &__input[type=checkbox]:focus + &__mark {
+    outline: 1px solid $crusta;
+    outline-offset: 2px;
   }
 
   &__mark {
