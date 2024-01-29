@@ -1,26 +1,25 @@
-import React from 'react';
+import {useState} from 'react';
 
 function TabsPanel({activeTab, handleClick}) {
+  const [buttons, setButton] = useState([
+    {id: 'tab_0', name: 'Описание'},
+    {id: 'tab_1', name: 'Характеристики'},
+    {id: 'tab_2', name: 'Свойства'}
+  ]);
+
+  const createButtonPanel = buttons.map(button => (
+    <button
+      key={button.id}
+      id={button.id}
+      type="button"
+      className={activeTab === button.id ? 'tabs__switch tabs__switch--active' : 'tabs__switch'}
+      onClick={handleClick}
+    >{button.name}</button>
+  ));
+
   return (
     <div className="tabs__panel">
-      <button
-        id="tab_1"
-        type="button"
-        className={activeTab === 'tab_1' ? 'tabs__switch tabs__switch--active' : 'tabs__switch'}
-        onClick={handleClick}
-      >Описание</button>
-      <button
-        id="tab_2"
-        type="button"
-        className={activeTab === 'tab_2' ? 'tabs__switch tabs__switch--active' : 'tabs__switch'}
-        onClick={handleClick}
-      >Характеристики</button>
-      <button
-        id="tab_3"
-        type="button"
-        className={activeTab === 'tab_3' ? 'tabs__switch tabs__switch--active' : 'tabs__switch'}
-        onClick={handleClick}
-      >Свойства</button>
+      {createButtonPanel}
     </div>
   );
 }
