@@ -1,7 +1,8 @@
 import React from 'react';
+import Title, {TitleSize, Heading} from '../../ui/title/title.jsx';
 
-function ProductSelectionField({products, changed}) {
-  const createList = products.map(item => (
+function ProductSelectionField({goods, changed}) {
+  const createList = goods && goods.length ? goods.map(item => (
       <li className="select-list__item" key={item.id}>
         <label className="select-list__label">
           <span className="select-list__name">{item.content}</span>
@@ -11,11 +12,11 @@ function ProductSelectionField({products, changed}) {
         </label>
       </li>
     )
-  );
+  ) : null;
 
   return (
     <fieldset className="form__fieldset form__fieldset--select">
-      <h3 className="form__title">Выберите продукты</h3>
+      <Title heading={Heading.H3} size={TitleSize.SMALL}>Выберите продукты</Title>
       <ul className="form__select-list select-list">
         {createList}
       </ul>
