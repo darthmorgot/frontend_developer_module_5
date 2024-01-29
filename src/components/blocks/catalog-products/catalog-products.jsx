@@ -2,12 +2,12 @@ import React from 'react';
 import CardProduct from '../card-product/card-product.jsx';
 import './style.scss';
 
-function CatalogProducts({data}) {
+function CatalogProducts({products}) {
   return (
     <section className="catalog__products products">
       <h2 className="visually-hidden">Каталог товаров</h2>
       <ul className="products__list products-list">
-        <CardProduct products={data}/>
+        <CardProduct products={products}/>
       </ul>
     </section>
   );
