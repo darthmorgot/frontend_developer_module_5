@@ -12,7 +12,7 @@ const productList = [
 ];
 
 function OrderForm() {
-  let [products, setProduct] = useState(productList);
+  const [products, setProduct] = useState(productList);
 
   function handleChange(id, e) {
     setProduct(products.map(item => item.id !== id ? item : {
