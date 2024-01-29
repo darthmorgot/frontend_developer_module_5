@@ -42,13 +42,13 @@
     background-color: $chrome-white;
 
     &:first-child {
-      background-image: url("../../../../src/assets/img/icon-eat.svg");
+      background-image: url("Images/icon-eat.svg");
       background-repeat: no-repeat;
       background-position: 20px 22px;
     }
 
     &:last-child {
-      background-image: url("../../../../src/assets/img/icon-sprout.svg");
+      background-image: url("Images/icon-sprout.svg");
       background-repeat: no-repeat;
       background-position: 20px 20px;
     }
@@ -58,13 +58,13 @@
     background-color: $linen;
 
     &:first-child {
-      background-image: url("../../../../src/assets/img/icon-garbage.svg");
+      background-image: url("Images/icon-garbage.svg");
       background-repeat: no-repeat;
       background-position: 20px 22px;
     }
 
     &:last-child {
-      background-image: url("../../../../src/assets/img/icon-no-meat.svg");
+      background-image: url("Images/icon-no-meat.svg");
       background-repeat: no-repeat;
       background-position: 20px 22px;
     }
