@@ -4,14 +4,14 @@ import CatalogProducts from '../../blocks/catalog-products/catalog-products.jsx'
 import './style.scss';
 import setPageTitle from '../../utils/utils.js';
 
-function CatalogPage({data}) {
+function CatalogPage({products}) {
   setPageTitle('Каталог | Фермерский магазин');
 
   return (
     <div className="catalog wrapper">
       <h1 className="visually-hidden">Каталог продуктов</h1>
       <OrderForm />
-      <CatalogProducts data={data}/>
+      <CatalogProducts products={products}/>
     </div>
   );
 }
