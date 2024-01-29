@@ -6,7 +6,7 @@ import TabFeature from './tab-feature.jsx';
 import './style.scss';
 
 function TabsData({item}) {
-  const [activeTab, setActiveTab] = useState('tab_1');
+  const [activeTab, setActiveTab] = useState('tab_0');
 
   function handleClick(e) {
     setActiveTab(e.target.id);
