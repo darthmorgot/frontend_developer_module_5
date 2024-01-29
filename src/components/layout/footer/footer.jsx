@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from '../../ui/logo/logo.jsx';
-import Copyright from '../../ui/copyright/copyright.jsx';
 import './style.scss';
 
 function Footer() {
@@ -8,7 +7,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer__wrapper wrapper">
         <Logo />
-        <Copyright />
+        <p className="footer__copyright">Создано 2021</p>
       </div>
     </footer>
   );
