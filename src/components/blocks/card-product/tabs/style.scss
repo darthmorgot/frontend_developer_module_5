@@ -9,12 +9,13 @@
 
 .tabs {
   &__panel {
-    margin-bottom: 16px;
+    margin-bottom: 11px;
   }
 
   &__switch {
     padding: 10px 10px 8px 12px;
     margin-right: 8px;
+    margin-bottom: 5px;
     font-size: 14px;
     border: 1px solid rgba(0 0 0 / 0.10);
 
@@ -30,6 +31,20 @@
     &--active {
       background-color: $chelsea-cucumber;
       color: $white;
+    }
+
+    &:hover {
+      background-color: $chelsea-cucumber;
+      color: $white;
+    }
+
+    &:active {
+      box-shadow: 0 4px 0 0 rgba(0 0 0 / 0.14) inset;
+    }
+
+    &:focus {
+      outline: 1px solid $crusta;
+      outline-offset: 2px;
     }
   }
 
