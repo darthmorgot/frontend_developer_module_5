@@ -12,10 +12,10 @@ const productList = [
 ];
 
 function OrderForm() {
-  const [products, setProduct] = useState(productList);
+  const [goods, setGood] = useState(productList);
 
   function handleChange(id, e) {
-    setProduct(products.map(item => item.id !== id ? item : {
+    setGood(goods.map(item => item.id !== id ? item : {
       ...item, checked: e.target.checked
     }));
   }
@@ -24,7 +24,7 @@ function OrderForm() {
     <section className="catalog__order-form order">
       <h2 className="visually-hidden">Форма для заказа товара</h2>
       <form action="#" method="post" className="order__form form">
-        <ProductSelectionField products={products} changed={handleChange}/>
+        <ProductSelectionField goods={goods} changed={handleChange}/>
         <ProductPurchaseField />
       </form>
     </section>
