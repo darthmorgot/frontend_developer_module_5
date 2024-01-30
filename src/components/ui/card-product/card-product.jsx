@@ -1,5 +1,5 @@
 import React from 'react';
-import Title, {TitleSize, Heading} from '../../ui/title/title.jsx';
+import Title, {TitleSize, Heading} from '../title/title.jsx';
 import TabsData from './tabs/tabs-data.jsx';
 import './style.scss';
 
