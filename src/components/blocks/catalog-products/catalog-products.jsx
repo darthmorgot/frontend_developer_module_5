@@ -1,5 +1,5 @@
 import React from 'react';
-import CardProduct from '../card-product/card-product.jsx';
+import CardProduct from '../../ui/card-product/card-product.jsx';
 import './style.scss';
 
 function CatalogProducts({products}) {
