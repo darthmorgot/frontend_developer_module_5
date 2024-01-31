@@ -15,7 +15,7 @@ function AdvantagesList({setPage, features}) {
             </li>
           ))}
         </ul>
-      <Button classButton={'advantages__link'} dataButton={'catalog-page'} handleButton={setPage}>Купить</Button>
+      <Button classButton={'advantages__link'} link dataButton={'catalog-page'} handleButton={setPage}>Купить</Button>
     </section>
   ) : null;
 }
