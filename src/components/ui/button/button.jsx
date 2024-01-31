@@ -1,11 +1,17 @@
 import React from "react";
+import {StyleButton} from './style.js';
 
-function Button({classButton, dataButton, handleButton, children}) {
-  let classBtn = `${classButton} button`;
+function Button({classButton, link, dataButton, handleButton, children}) {
   return (
-    <>
-      <a href="#" className={classBtn} data-page={dataButton} onClick={handleButton} tabIndex="0">{children}</a>
-    </>
+    <StyleButton
+      className={classButton}
+      {...(link ? null : {as: 'button', type: 'submit'})}
+      data-page={dataButton}
+      onClick={handleButton}
+      tabIndex="0"
+    >
+      {children}
+    </StyleButton>
   );
 }
 
