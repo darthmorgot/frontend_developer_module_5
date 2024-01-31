@@ -1,5 +1,6 @@
 import React from 'react';
 import Title, {TitleSize, Heading} from '../../ui/title/title.jsx';
+import Button from '../../ui/button/button.jsx';
 
 function ProductPurchaseField({prices}) {
   return (
@@ -14,7 +15,7 @@ function ProductPurchaseField({prices}) {
         <span>Цена</span>
         <output className="form__output">1 200 руб.</output>
       </div>
-      <button type="submit" className="form__submit button">Купить</button>
+      <Button classButton={'form__submit'}>Купить</Button>
     </fieldset>
   );
 }
