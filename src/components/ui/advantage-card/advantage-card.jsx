@@ -1,27 +1,20 @@
 import React from 'react';
-import Title, {TitleSize, Heading} from '../title/title.jsx';
-import './style.scss';
+import Title, {TitleSize, TitleLevel} from '../title/title.jsx';
+import {Section, CardHeader, Category, Description} from './style.js';
 
 // Карточка из списка преимуществ
 function AdvantageCard({category, title, description, icon, isNegative}) {
   return (
-    <section
-      className={`advantage-card${isNegative ? " advantage-card--negative" : ""}`}
+    <Section
+      $isNegative={isNegative}
       style={{backgroundImage: `url(${icon})`}}
     >
-      <div className="advantage-card__header">
-        <span
-          className={`advantage-card__category${isNegative ? " advantage-card__category--negative" : ""}`}
-        >
-          {category}
-        </span>
-        <Title heading={Heading.H3} size={TitleSize.SMALL}>{title}</Title>
-      </div>
-      <p
-        className="advantage-card__description"
-        dangerouslySetInnerHTML={{__html: description}}
-      />
-    </section>
+      <CardHeader $isNegative={isNegative}>
+        <Category $isNegative={isNegative}>{category}</Category>
+        <Title level={TitleLevel.H3} size={TitleSize.SMALL}>{title}</Title>
+      </CardHeader>
+      <Description dangerouslySetInnerHTML={{__html: description}} />
+    </Section>
   );
 }
 
