@@ -1,11 +1,11 @@
 import React from 'react';
-import Title, {TitleSize, Heading} from '../../ui/title/title.jsx';
+import Title, {TitleSize, TitleLevel} from '../../ui/title/title.jsx';
 import Button from '../../ui/button/button.jsx';
 
 function ProductPurchaseField({prices}) {
   return (
     <fieldset className="form__fieldset form__fieldset--order">
-      <Title heading={Heading.H3} size={TitleSize.SMALL}>Сделать заказ</Title>
+      <Title level={TitleLevel.H3} size={TitleSize.SMALL}>Сделать заказ</Title>
       <div className="form__address">
         <label>
           <input type="text" name="address" placeholder="Введите адрес доставки"/>
