@@ -194,10 +194,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    display: flex;
-    flex-direction: column;
     min-width: 1140px;
-    min-height: 100%;
     margin: 0;
     padding: 0;
     font-family: "Inter", "Arial", sans-serif;
@@ -209,8 +206,10 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${props => props.theme.white};
   }
 
-  .main-container {
-    flex-grow: 1;
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
 
   .wrapper {
