@@ -1,15 +1,16 @@
 import React from "react";
 import Button from '../../ui/button/button.jsx';
+import {StyledNav, Anchor} from './style.js';
 
 function Nav({page, setPage}) {
   return (
-    <nav className="nav">
+    <StyledNav>
       {
         page === 'main-page'
-          ? <Button classButton={'nav__link'} link dataButton={'catalog-page'} handleButton={setPage}>Купить</Button>
-          : <a className="nav__link nav__link--home" data-page="main-page" onClick={setPage} tabIndex="0">Главная</a>
+          ? <Button link dataButton={'catalog-page'} handleButton={setPage}>Купить</Button>
+          : <Anchor data-page="main-page" onClick={setPage} tabIndex="0">Главная</Anchor>
       }
-    </nav>
+    </StyledNav>
   );
 }
 
