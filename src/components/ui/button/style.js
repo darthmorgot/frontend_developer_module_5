@@ -13,6 +13,7 @@ export const StyleButton = styled.a`
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+  cursor: pointer;
 
   &:hover {
     background: ${props => props.theme.crusta};
