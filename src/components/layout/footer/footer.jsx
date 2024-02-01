@@ -1,15 +1,15 @@
 import React from 'react';
 import Logo from '../../ui/logo/logo.jsx';
-import './style.scss';
+import {StyledFooter, FooterWrapper, FooterCopyright} from './style.js';
 
 function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer__wrapper wrapper">
+    <StyledFooter>
+      <FooterWrapper className="wrapper">
         <Logo />
-        <p className="footer__copyright">Создано 2021</p>
-      </div>
-    </footer>
+        <FooterCopyright>Создано 2021</FooterCopyright>
+      </FooterWrapper>
+    </StyledFooter>
   );
 }
 
