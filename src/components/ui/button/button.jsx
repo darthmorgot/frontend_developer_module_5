@@ -5,7 +5,7 @@ function Button({classButton, link, dataButton, handleButton, children}) {
   return (
     <StyleButton
       className={classButton ? classButton : null}
-      {...(link ? null : {as: 'button', type: 'submit'})}
+      {...(link ? null : {as: 'button'})}
       data-page={dataButton}
       onClick={handleButton}
       tabIndex="0"
