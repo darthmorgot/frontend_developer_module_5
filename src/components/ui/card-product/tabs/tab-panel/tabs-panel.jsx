@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {StyledTabsPanel, ButtonTabsPanel} from './style.js';
 
 function TabsPanel({activeTab, handleClick}) {
   const [buttons, setButton] = useState([
@@ -8,19 +9,19 @@ function TabsPanel({activeTab, handleClick}) {
   ]);
 
   const createButtonPanel = buttons.map(button => (
-    <button
+    <ButtonTabsPanel
       key={button.id}
       id={button.id}
       type="button"
-      className={activeTab === button.id ? 'tabs__switch tabs__switch--active' : 'tabs__switch'}
+      className={activeTab === button.id ? 'active' : null}
       onClick={handleClick}
-    >{button.name}</button>
+    >{button.name}</ButtonTabsPanel>
   ));
 
   return (
-    <div className="tabs__panel">
+    <StyledTabsPanel>
       {createButtonPanel}
-    </div>
+    </StyledTabsPanel>
   );
 }
 
