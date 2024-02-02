@@ -1,9 +1,13 @@
 import React from 'react';
 
-function HiddenTitle({children}) {
+function HiddenTitle({level, children}) {
   return (
     <>
-      <h2 className={'visually-hidden'}>{children}</h2>
+      {
+        level
+          ? <h1 className={'visually-hidden'}>{children}</h1>
+          : <h2 className={'visually-hidden'}>{children}</h2>
+      }
     </>
   );
 }
