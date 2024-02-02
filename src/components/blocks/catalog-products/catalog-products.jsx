@@ -1,15 +1,17 @@
 import React from 'react';
 import CardProduct from '../../ui/card-product/card-product.jsx';
-import './style.scss';
+import HiddenTitle from '../../ui/hidden-title/hidden-title.jsx';
+import {Section, ProductList} from './style.js';
 
+// Блок с товарами на странице каталога
 function CatalogProducts({products}) {
   return (
-    <section className="catalog__products products">
-      <h2 className="visually-hidden">Каталог товаров</h2>
-      <ul className="products__list products-list">
+    <Section>
+      <HiddenTitle>Каталог товаров</HiddenTitle>
+      <ProductList>
         <CardProduct products={products}/>
-      </ul>
-    </section>
+      </ProductList>
+    </Section>
   );
 }
 
