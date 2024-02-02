@@ -2,6 +2,7 @@ import React from 'react';
 import Title, {TitleSize, TitleLevel} from '../../ui/title/title.jsx';
 import {Section, AboutWrapper, TextWrapper, Description} from './style.js';
 
+// Блок About на главной странице
 function About() {
   return (
     <Section>
