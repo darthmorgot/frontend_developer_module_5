@@ -2,6 +2,7 @@ import React from "react";
 import Button from '../../ui/button/button.jsx';
 import {StyledNav, Anchor} from './style.js';
 
+// Блок навигации в шапке сайте
 function Nav({page, setPage}) {
   return (
     <StyledNav>
