@@ -4,8 +4,11 @@ import tick from 'Images/tick.png';
 export const SelectFieldset = styled.fieldset`
   padding: 23px 20px 20px 20px;
   margin: 0 0 17px;
-  border: 1px solid rgba(0 0 0 / 0.10);
-  box-shadow: 0 0 1px 0 rgba(0 0 0 / 0.04), 0 2px 6px 0 rgba(0 0 0 / 0.04), 0 10px 20px 0 rgba(0 0 0 / 0.04);
+  border: 1px solid ${props => props.theme.blackZeroTen};
+  box-shadow:
+    0 0 1px 0 ${props => props.theme.blackZeroFour},
+    0 2px 6px 0 ${props => props.theme.blackZeroFour},
+    0 10px 20px 0 ${props => props.theme.blackZeroFour};
 
   h3 {
     margin-bottom: 27px;
@@ -41,7 +44,7 @@ export const SpanMark = styled.span`
   height: 24px;
   margin-top: 1px;
   margin-right: -1px;
-  border: 1px solid rgba(0 0 0 / 0.10);
+  border: 1px solid ${props => props.theme.blackZeroTen};
 
   ${Input}:checked + && {
     background-image: url(${tick});

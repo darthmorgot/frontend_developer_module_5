@@ -9,7 +9,7 @@ export const ButtonTabsPanel = styled.button`
   margin-right: 8px;
   margin-bottom: 5px;
   font-size: 14px;
-  border: 1px solid rgba(0 0 0 / 0.10);
+  border: 1px solid ${props => props.theme.blackZeroTen};
 
   &:nth-child(2) {
     padding-right: 11px;
@@ -26,7 +26,7 @@ export const ButtonTabsPanel = styled.button`
   }
 
   &:active {
-    box-shadow: 0 4px 0 0 rgba(0 0 0 / 0.14) inset;
+    box-shadow: 0 4px 0 0 ${props => props.theme.blackZeroOneFour} inset;
   }
 
   &:focus {

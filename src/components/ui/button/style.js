@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyleButton = styled.a`
   display: block;
-  width: 260px;
+  width: ${props => props.$maxWidth ? '100%' : '260px'};
   padding-top: 17px;
   padding-bottom: 16px;
   margin: 0 auto;
@@ -20,7 +20,7 @@ export const StyleButton = styled.a`
   }
 
   &:active {
-    box-shadow: 0 4px 0 0 rgba(0 0 0 / 0.14) inset;
+    box-shadow: 0 4px 0 0 ${props => props.theme.blackZeroOneFour} inset;
   }
 
   &:focus {

@@ -4,8 +4,11 @@ import {StyleButton} from '../../../ui/button/style.js';
 export const OrderFieldset = styled.fieldset`
   padding: 23px 20px 20px 19px;
   margin: 0 0 17px;
-  border: 1px solid rgba(0 0 0 / 0.10);
-  box-shadow: 0 0 1px 0 rgba(0 0 0 / 0.04), 0 2px 6px 0 rgba(0 0 0 / 0.04), 0 10px 20px 0 rgba(0 0 0 / 0.04);
+  border: 1px solid ${props => props.theme.blackZeroTen};
+  box-shadow:
+    0 0 1px 0 ${props => props.theme.blackZeroFour},
+    0 2px 6px 0 ${props => props.theme.blackZeroFour},
+    0 10px 20px 0 ${props => props.theme.blackZeroFour};
 
   h3 {
     margin-bottom: 24px;
@@ -32,7 +35,7 @@ export const Input = styled.input.attrs({
   padding-left: 12px;
   padding-bottom: 14px;
   font-size: 14px;
-  border: 1px solid rgba(0 0 0 / 0.10);
+  border: 1px solid ${props => props.theme.blackZeroTen};
   background: ${props => props.theme.wildSand};
 
   &:focus {
@@ -57,6 +60,4 @@ export const Output = styled.output`
   line-height: 130%;
 `;
 
-export const SubmitButton = styled(StyleButton).attrs({type: 'submit'})`
-  width: 314px;
-`;
+export const SubmitButton = styled(StyleButton).attrs({type: 'submit'})``;

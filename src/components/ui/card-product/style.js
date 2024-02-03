@@ -11,7 +11,7 @@ export const Card = styled.div`
   grid-template-rows: auto 1fr;
   grid-gap: 0 20px;
   padding: 19px;
-  border: 1px solid rgba(0 0 0 / 0.10);
+  border: 1px solid ${props => props.theme.blackZeroTen};
   background: ${props => props.theme.white};
 
   & h2 {
