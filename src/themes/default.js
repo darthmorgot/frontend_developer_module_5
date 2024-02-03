@@ -10,4 +10,7 @@ export const defaultTheme = {
   flamingo: '#f75531',
   seaBuckthorn: '#fc9b27',
   crusta: '#fc7427',
+  blackZeroTen: 'rgba(0, 0, 0, 0.10)',
+  blackZeroFour: 'rgba(0, 0, 0, 0.04)',
+  blackZeroOneFour: 'rgba(0, 0, 0, 0.14)',
 };
