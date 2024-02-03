@@ -182,6 +182,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   // end normalize
 
+  // Common style
   html {
     height: 100%;
     box-sizing: border-box;
