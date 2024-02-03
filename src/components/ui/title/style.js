@@ -1,29 +1,27 @@
-import styled from 'styled-components';
-import {TitleSize} from './title.jsx';
+import styled, {css} from 'styled-components';
+
+const TitleStyleValue = {
+  big: {
+    fontSize: '44px',
+    lineHeight: '115%'
+  },
+  medium: {
+    fontSize: '24px',
+    lineHeight: '130%'
+  },
+  small: {
+    fontSize: '18px',
+    lineHeight: '150%'
+  }
+};
 
 export const StyledTitle = styled.h1`
   margin: 0;
   font-weight: 700;
-  font-size: ${props => {
-    if (props.$size === TitleSize.BIG) {
-      return '44px';
-    }
-    if (props.$size === TitleSize.MEDIUM) {
-      return '24px';
-    }
-    if (props.$size === TitleSize.SMALL) {
-      return '18px';
-    }
-  }};
-  line-height: ${props => {
-    if (props.$size === TitleSize.BIG) {
-      return '115%';
-    }
-    if (props.$size === TitleSize.MEDIUM) {
-      return '130%';
-    }
-    if (props.$size === TitleSize.SMALL) {
-      return '150%';
-    }
+  ${props => {
+    return css`
+      font-size: ${TitleStyleValue[props.$size].fontSize};
+      line-height: ${TitleStyleValue[props.$size].lineHeight};
+    `;
   }};
 `;
