@@ -17,7 +17,7 @@ function ProductPurchaseField({prices}) {
         <SpanPrice>Цена</SpanPrice>
         <Output>1 200 руб.</Output>
       </ShowPrice>
-      <SubmitButton as={'button'}>Купить</SubmitButton>
+      <SubmitButton $maxWidth as={'button'}>Купить</SubmitButton>
     </OrderFieldset>
   );
 }

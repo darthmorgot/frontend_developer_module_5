@@ -5,7 +5,7 @@ import {StyledFooter, FooterWrapper, FooterCopyright} from './style.js';
 function Footer() {
   return (
     <StyledFooter>
-      <FooterWrapper className="wrapper">
+      <FooterWrapper className='wrapper'>
         <Logo />
         <FooterCopyright>Создано 2021</FooterCopyright>
       </FooterWrapper>

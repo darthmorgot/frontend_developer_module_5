@@ -9,7 +9,7 @@ function CatalogPage({products}) {
   setPageTitle('Каталог | Фермерский магазин');
 
   return (
-    <Catalog className="wrapper">
+    <Catalog className='wrapper'>
       <HiddenTitle level>Каталог продуктов</HiddenTitle>
       <OrderForm />
       <CatalogProducts products={products}/>

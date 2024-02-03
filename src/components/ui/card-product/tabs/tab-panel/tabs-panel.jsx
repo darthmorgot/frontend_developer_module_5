@@ -12,7 +12,7 @@ function TabsPanel({activeTab, handleClick}) {
     <ButtonTabsPanel
       key={button.id}
       id={button.id}
-      type="button"
+      type='button'
       className={activeTab === button.id ? 'active' : null}
       onClick={handleClick}
     >{button.name}</ButtonTabsPanel>

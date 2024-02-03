@@ -10,9 +10,9 @@ function CardProduct({products}) {
           <Title level={TitleLevel.H2} size={TitleSize.MEDIUM}>{item.title}</Title>
           <Image
             src={item.image}
-            width="248"
-            height="248"
-            alt="Картинка товара"
+            width='248'
+            height='248'
+            alt='Картинка товара'
           />
           <Tabs item={item}/>
         </Card>

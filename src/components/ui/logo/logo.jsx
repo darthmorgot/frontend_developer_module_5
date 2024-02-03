@@ -4,8 +4,8 @@ import LogoImage from 'Images/logo.svg?react';
 
 function Logo() {
   return (
-    <StyledLogo href="/" className="logo-link">
-      <LogoImage role="img" aria-label="Логотип Фермерского магазина"/>
+    <StyledLogo href='/' className='logo-link'>
+      <LogoImage role='img' aria-label='Логотип Фермерского магазина'/>
       <LogoText>Фермерские продукты</LogoText>
     </StyledLogo>
   );

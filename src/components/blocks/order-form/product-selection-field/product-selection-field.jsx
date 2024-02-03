@@ -8,7 +8,7 @@ function ProductSelectionField({goods, changed}) {
       <ListItem key={item.id}>
         <Label>
           <SpanName>{item.content}</SpanName>
-          <Input className="visually-hidden"
+          <Input className='visually-hidden'
                  name={item.name}
                  checked={item.checked}
                  onChange={e => changed(item.id, e)}

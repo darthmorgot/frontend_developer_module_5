@@ -6,7 +6,7 @@ import {StyledHeader, HeaderWrapper} from './style.js';
 function Header({page, setPage}) {
   return (
     <StyledHeader>
-      <HeaderWrapper className="wrapper">
+      <HeaderWrapper className='wrapper'>
         <Logo/>
         <Nav page={page} setPage={setPage}/>
       </HeaderWrapper>

@@ -1,7 +1,7 @@
-import React, {useState} from "react";
-import Header from "../header/header";
-import Footer from "../footer/footer";
-import MainPage from "../../pages/main-page/main-page";
+import React, {useState} from 'react';
+import Header from '../header/header';
+import Footer from '../footer/footer';
+import MainPage from '../../pages/main-page/main-page';
 import CatalogPage from '../../pages/catalog-page/catalog-page.jsx';
 import {Main} from './style.js';
 

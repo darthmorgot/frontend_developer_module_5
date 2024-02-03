@@ -7,7 +7,7 @@ import {Section, Slogan, List, ListItem} from './style.js';
 // Блок со списком преимуществ на главной странице
 function AdvantagesList({setPage, features}) {
   return features && features.length ? (
-    <Section className="wrapper">
+    <Section className='wrapper'>
       <HiddenTitle>Преимущества фермерских продуктов</HiddenTitle>
       <Slogan>Почему фермерские продукты лучше?</Slogan>
         <List>
