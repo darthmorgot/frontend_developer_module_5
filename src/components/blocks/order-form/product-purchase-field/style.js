@@ -44,6 +44,11 @@ export const Input = styled.input.attrs({
   }
 `;
 
+export const HiddenInput = styled.input.attrs({
+  type: 'hidden',
+  name: 'product-price'
+})``;
+
 export const ShowPrice = styled.div``;
 
 export const SpanPrice = styled.span`
@@ -60,4 +65,13 @@ export const Output = styled.output`
   line-height: 130%;
 `;
 
-export const SubmitButton = styled(StyleButton).attrs({type: 'submit'})``;
+export const SubmitButton = styled(StyleButton).attrs({type: 'submit'})`
+  &:disabled {
+    opacity: 0.5;
+    cursor: auto;
+  }
+
+  &:disabled:hover {
+    background-color: ${props => props.theme.seaBuckthorn};
+  }
+`;
