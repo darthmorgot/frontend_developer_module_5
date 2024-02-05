@@ -5,13 +5,19 @@ import {Catalog} from './style.js';
 import HiddenTitle from '../../ui/hidden-title/hidden-title.jsx';
 import setPageTitle from '../../utils/utils.js';
 
+/**
+ * Компонент страницы каталога товаров
+ * @param products props Данные о продуктах поступают из PageWrapper
+ * @returns {JSX.Element} Разметка страницы каталога
+ * @constructor
+ */
 function CatalogPage({products}) {
   setPageTitle('Каталог | Фермерский магазин');
 
   return (
     <Catalog className='wrapper'>
       <HiddenTitle level>Каталог продуктов</HiddenTitle>
-      <OrderForm />
+      <OrderForm products={products}/>
       <CatalogProducts products={products}/>
     </Catalog>
   );
