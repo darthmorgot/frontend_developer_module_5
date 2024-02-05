@@ -5,7 +5,7 @@ import MainPage from '../../pages/main-page/main-page';
 import CatalogPage from '../../pages/catalog-page/catalog-page.jsx';
 import {Main} from './style.js';
 
-function PageWrapper({products, features}) {
+function PageWrapper({products = [], features = []}) {
   const [page, setPage] = useState('main-page');
 
   function handlePage(e) {
