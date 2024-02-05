@@ -4,17 +4,18 @@ import ProductPurchaseField from './product-purchase-field/product-purchase-fiel
 import HiddenTitle from '../../ui/hidden-title/hidden-title.jsx';
 import {Section, Form} from './style.js';
 
-const productList = [
-  {id: 0, content: 'Филе бедра цыпленка', name: 'chicken-thigh-fillet', checked: true},
-  {id: 1, content: 'Филе бедра гуся', name: 'goose-thigh-fillet', checked: true},
-  {id: 2, content: 'Мякоть бедра говяжья', name: 'beef-thigh-flesh', checked: true},
-  {id: 3, content: 'Грудка цыпленка на кости', name: 'chicken-breast-on-the-bone', checked: false},
-  {id: 4, content: 'Голень цыпленка', name: 'drumstick-chicken', checked: false}
-];
-
-// Блок формы заказа на странице каталога
-function OrderForm() {
-  const [goods, setGood] = useState(productList);
+/**
+ * Компонент формы заказа на странице каталога
+ * @param products props Моковые данные поступают из CatalogPage
+ * @returns {JSX.Element} Разметка формы
+ * @constructor
+ */
+function OrderForm({products}) {
+  const [goods, setGood] = useState(products);
+  const goodCheck = goods.filter(option => option.checked === true);
+  const goodCheckPrice = goodCheck.map(item => item.price);
+  const goodCheckPriceSum = goodCheckPrice.reduce((sum, current) => sum + current, 0);
+  const isDisabledButton = goodCheck && goodCheck.length;
 
   function handleChange(id, e) {
     setGood(goods.map(item => item.id !== id ? item : {
@@ -22,12 +23,20 @@ function OrderForm() {
     }));
   }
 
+  const handleBuy = () => {
+    alert(
+      `Спасибо за покупку.
+      Вы приобрели: ${goodCheck.map(item => item.title.toLowerCase()).join(', ')}.
+      Цена: ${goodCheckPriceSum} руб.`
+    );
+  };
+
   return (
     <Section>
       <HiddenTitle>Форма для заказа товара</HiddenTitle>
-      <Form action="#" method="post">
+      <Form action='https://echo.htmlacademy.ru' method='post' autoComplete='off'>
         <ProductSelectionField goods={goods} changed={handleChange}/>
-        <ProductPurchaseField />
+        <ProductPurchaseField price={goodCheckPriceSum} buy={handleBuy} isDisabled={isDisabledButton}/>
       </Form>
     </Section>
   );
