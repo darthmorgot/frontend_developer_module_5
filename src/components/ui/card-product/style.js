@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 
-export const ListItem = styled.li`
-  width: 727px;
-  margin-bottom: 12px;
-`;
-
 export const Card = styled.div`
   display: grid;
   grid-template-columns: auto 1fr;
