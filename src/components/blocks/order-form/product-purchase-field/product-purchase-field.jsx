@@ -1,23 +1,49 @@
-import React from 'react';
+import {useState} from 'react';
 import Title, {TitleSize, TitleLevel} from '../../../ui/title/title.jsx';
-import {OrderFieldset, Address, Label, HiddenLabelText, Input, ShowPrice, SpanPrice, Output, SubmitButton} from './style.js';
+import {
+  OrderFieldset,
+  Address,
+  Label,
+  HiddenLabelText,
+  Input,
+  HiddenInput,
+  ShowPrice,
+  SpanPrice,
+  Output,
+  SubmitButton
+} from './style.js';
 
-// Блок формы с адресом, ценой и кнопкой покупки на странице каталога
-function ProductPurchaseField({prices}) {
+/**
+ * Компонент поля формы с адресом, ценой и кнопкой покупки на странице каталога
+ * @param price props Данные с ценой заказа поступают из OrderForm
+ * @param buy props Коллбэк поступает из OrderForm
+ * @param isDisabled props Данные для активации/деактивации кнопки "Купить"
+ * @returns {JSX.Element} Разметка поля формы
+ * @constructor
+ */
+function ProductPurchaseField({price = 0, buy, isDisabled}) {
+  const [address, setAddress] = useState('');
+  const isButtonEnable = isDisabled && address;
+
+  const handleChangeAddress = (e) => {
+    setAddress(e.target.value);
+  };
+
   return (
     <OrderFieldset>
       <Title level={TitleLevel.H3} size={TitleSize.SMALL}>Сделать заказ</Title>
       <Address>
         <Label>
           <HiddenLabelText>Введите адрес доставки</HiddenLabelText>
-          <Input/>
+          <Input value={address} onChange={(e) => handleChangeAddress(e)} required/>
         </Label>
       </Address>
       <ShowPrice>
         <SpanPrice>Цена</SpanPrice>
-        <Output>1 200 руб.</Output>
+        <Output>{price} руб.</Output>
+        <HiddenInput value={price}/>
       </ShowPrice>
-      <SubmitButton $maxWidth as={'button'}>Купить</SubmitButton>
+      <SubmitButton $maxWidth as={'button'} onClick={buy} disabled={!isButtonEnable}>Купить</SubmitButton>
     </OrderFieldset>
   );
 }
