@@ -1,23 +1,25 @@
 import React from 'react';
 import Title, {TitleSize, TitleLevel} from '../title/title.jsx';
 import Tabs from './tabs/tabs.jsx';
-import {ListItem, Card, Image} from './style.js';
+import {Card, Image} from './style.js';
 
-function CardProduct({products}) {
-  return products && products.length ? products.map(item => (
-      <ListItem key={item.id}>
-        <Card>
-          <Title level={TitleLevel.H2} size={TitleSize.MEDIUM}>{item.title}</Title>
-          <Image
-            src={item.image}
-            width='248'
-            height='248'
-            alt='Картинка товара'
-          />
-          <Tabs item={item}/>
-        </Card>
-      </ListItem>
-    )) : null;
+/**
+ * Компонент элемента списка товаров с карточкой товара
+ * @param products props Данные о товаре поступают из CatalogProducts
+ * @returns {*|null} Разметка элемента списка
+ * @constructor
+ */
+function CardProduct({product}) {
+  return <Card>
+    <Title level={TitleLevel.H2} size={TitleSize.MEDIUM}>{product.title}</Title>
+    <Image
+      src={product.image}
+      width="248"
+      height="248"
+      alt="Картинка товара"
+    />
+    <Tabs item={product}/>
+  </Card>;
 }
 
 export default CardProduct;
