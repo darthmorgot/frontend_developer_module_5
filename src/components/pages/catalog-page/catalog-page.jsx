@@ -1,9 +1,8 @@
-import React from 'react';
+import {useEffect} from 'react';
 import OrderForm from '../../blocks/order-form/order-form.jsx';
 import CatalogProducts from '../../blocks/catalog-products/catalog-products.jsx';
 import {Catalog} from './style.js';
 import HiddenTitle from '../../ui/hidden-title/hidden-title.jsx';
-import setPageTitle from '../../utils/utils.js';
 
 /**
  * Компонент страницы каталога товаров
@@ -12,7 +11,10 @@ import setPageTitle from '../../utils/utils.js';
  * @constructor
  */
 function CatalogPage({products}) {
-  setPageTitle('Каталог | Фермерский магазин');
+  useEffect(() => {
+    document.title = 'Каталог | Фермерский магазин';
+  }, []);
+
 
   return (
     <Catalog className='wrapper'>
