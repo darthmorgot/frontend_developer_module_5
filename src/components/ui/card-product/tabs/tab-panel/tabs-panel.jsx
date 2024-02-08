@@ -3,7 +3,7 @@ import {StyledTabsPanel, ButtonTabsPanel} from './style.js';
 
 /**
  * Компонент панели с кнопками вкладок на карточке товара
- * @param activeTab props Данные об активной вкладке посупают из Tabs
+ * @param activeTab props Данные об активной вкладке поступают из Tabs
  * @param handleClick props Коллбэк поступает из Tabs
  * @returns {JSX.Element} Разметка панели
  * @constructor
