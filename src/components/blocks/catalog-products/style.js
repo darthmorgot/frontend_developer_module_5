@@ -14,5 +14,4 @@ export const ProductList = styled(Swiper)`
 export const ListItem = styled(SwiperSlide)`
   width: 727px;
   height: 288px;
-  margin-bottom: 12px;
 `;
