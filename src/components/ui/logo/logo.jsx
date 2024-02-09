@@ -2,6 +2,11 @@ import React from 'react';
 import {StyledLogo, LogoText} from './style.js';
 import LogoImage from 'Images/logo.svg?react';
 
+/**
+ * Компонент блока с логотипом
+ * @returns {JSX.Element|null} Разметка блока
+ * @constructor
+ */
 function Logo() {
   return (
     <StyledLogo href='/' className='logo-link'>
