@@ -2,7 +2,13 @@ import React from 'react';
 import Button from '../../ui/button/button.jsx';
 import {StyledNav, Anchor} from './style.js';
 
-// Блок навигации в шапке сайте
+/**
+ * Компонент блока навигации в шапке сайте
+ * @param page props Данные о странице сайта поступает из Header
+ * @param setPage props Коллбэк поступает из Header
+ * @returns {JSX.Element} Разметка блока
+ * @constructor
+ */
 function Nav({page, setPage}) {
   return (
     <StyledNav>
