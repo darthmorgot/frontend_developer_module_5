@@ -2,7 +2,16 @@ import React from 'react';
 import Title, {TitleSize, TitleLevel} from '../title/title.jsx';
 import {Section, CardHeader, Category, Description} from './style.js';
 
-// Карточка из списка преимуществ
+/**
+ * Компонент карточки из списка преимуществ
+ * @param category props Данные о категории поступают из AdvantagesList
+ * @param title props Данные о названии поступают из AdvantagesList
+ * @param description props Данные об описании поступают из AdvantagesList
+ * @param icon props Данные об иконке поступают из AdvantagesList
+ * @param isNegative props Данные для выбора стиля поступают из AdvantagesList
+ * @returns {JSX.Element} Разметка карточки
+ * @constructor
+ */
 function AdvantageCard({category, title, description, icon, isNegative}) {
   return (
     <Section
