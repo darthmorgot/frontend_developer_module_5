@@ -4,7 +4,13 @@ import AdvantageCard from '../../ui/advantage-card/advantage-card.jsx';
 import Button from '../../ui/button/button.jsx';
 import {Section, Slogan, List, ListItem} from './style.js';
 
-// Блок со списком преимуществ на главной странице
+/**
+ * Компонент блока со списком преимуществ на главной странице
+ * @param setPage props Данные о странице поступают из MainPage
+ * @param features props Данные для списка преимуществ поступает из MainPage
+ * @returns {JSX.Element|null} Разметка блока
+ * @constructor
+ */
 function AdvantagesList({setPage, features}) {
   return features && features.length ? (
     <Section className='wrapper'>
