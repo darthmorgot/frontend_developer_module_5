@@ -1,6 +1,13 @@
 import React from 'react';
 import {Dl, RowWrapper, Dt, Dd} from './style.js';
 
+/**
+ * Компонент блока со свойствами на карточке товара
+ * @param activeTab props Данные об активной вкладке поступают из Tabs
+ * @param item props Данные о продукте поступают из Tabs
+ * @returns {JSX.Element|null} Разметка блока
+ * @constructor
+ */
 function TabFeature({activeTab, item}) {
   return activeTab === 'tab_2'
     ? <Dl>
