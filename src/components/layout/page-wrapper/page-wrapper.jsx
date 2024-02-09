@@ -5,6 +5,13 @@ import MainPage from '../../pages/main-page/main-page';
 import CatalogPage from '../../pages/catalog-page/catalog-page.jsx';
 import {Main} from './style.js';
 
+/**
+ * Компонент обертка для страниц сайта
+ * @param products props Данные о товарах поступают из App
+ * @param features props Данные о преимуществах поступают из App
+ * @returns {JSX.Element} Разметка страницы
+ * @constructor
+ */
 function PageWrapper({products = [], features = []}) {
   const [page, setPage] = useState('main-page');
 
