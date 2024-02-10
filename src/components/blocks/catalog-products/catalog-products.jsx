@@ -9,17 +9,21 @@ import {Section, ProductList, ListItem} from './style.js';
 /**
  * Компонент списка с товарами на странице каталога
  * @param products props Данные о товарах поступают из CatalogPage
+ * @param setSwiper props Коллбэк поступает из CatalogPage
  * @returns {JSX.Element} Разметка списка
  * @constructor
  */
-function CatalogProducts({products}) {
+function CatalogProducts({products, setSwiper}) {
   return (
     <Section>
       <HiddenTitle>Каталог товаров</HiddenTitle>
       <ProductList
+        onSwiper={setSwiper}
+        slidesOffsetAfter={148}
+        autoHeight={true}
         direction={'vertical'}
         slidesPerView={'auto'}
-        spaceBetween={20}
+        spaceBetween={12}
         grabCursor={true}
         scrollbar={{
           hide: false,
