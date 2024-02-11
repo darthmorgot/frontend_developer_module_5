@@ -19,7 +19,12 @@ import {
  * @returns {JSX.Element} Разметка поля формы
  * @constructor
  */
-function ProductSelectionField({products, selectedValues, setSelectedValues, slideToSelectProduct}) {
+function ProductSelectionField({
+                                 products,
+                                 selectedValues,
+                                 setSelectedValues = () => {},
+                                 slideToSelectProduct = () => {}
+}) {
   return (
     <SelectFieldset>
       <Title level={TitleLevel.H3} size={TitleSize.SMALL}>Выберите продукты</Title>
@@ -30,6 +35,7 @@ function ProductSelectionField({products, selectedValues, setSelectedValues, sli
                 <SpanName>{item.title}</SpanName>
                 <Input className='visually-hidden'
                        name={item.name}
+                       value={item.id}
                        checked={selectedValues.includes(item.id)}
                        onChange={() => setSelectedValues(item.id)}
                        onClick={() => slideToSelectProduct(item.id, index)}
