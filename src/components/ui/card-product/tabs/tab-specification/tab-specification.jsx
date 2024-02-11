@@ -1,5 +1,5 @@
 import React from 'react';
-import {Dl, RowWrapper, Dt, Dd} from './style.js';
+import OptionList from '../option-list/option-list.jsx';
 
 /**
  * Компонент вкладки с характеристиками товара
@@ -10,28 +10,7 @@ import {Dl, RowWrapper, Dt, Dd} from './style.js';
  */
 function TabSpecification({activeTab, item}) {
   return activeTab === 'tab_1'
-    ? <Dl>
-      <RowWrapper>
-        <Dt>Масса:</Dt>
-        <Dd>{item.spec.weight}</Dd>
-      </RowWrapper>
-      <RowWrapper>
-        <Dt>Срок годности:</Dt>
-        <Dd>{item.spec.expiration_date}</Dd>
-      </RowWrapper>
-      {
-        item.spec.breed
-        ? <RowWrapper>
-            <Dt>Порода:</Dt>
-            <Dd>{item.spec.breed}</Dd>
-          </RowWrapper>
-        : null
-      }
-      <RowWrapper>
-        <Dt>Место происхождения:</Dt>
-        <Dd>{item.spec.place_origin}</Dd>
-      </RowWrapper>
-    </Dl>
+    ? <OptionList list={item.spec}/>
     : null;
 }
 
