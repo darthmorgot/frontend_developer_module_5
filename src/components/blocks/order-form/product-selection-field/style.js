@@ -33,6 +33,11 @@ export const Label = styled.label`
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+
+  &:focus-within {
+    outline: 1px solid ${props => props.theme.crusta};
+    outline-offset: 2px;
+  }
 `;
 
 export const SpanName = styled.span``;
@@ -51,11 +56,6 @@ export const SpanMark = styled.span`
     background-color: ${props => props.theme.seaBuckthorn};
     background-position: 3px 3px;
     background-repeat: no-repeat;
-  }
-
-  ${Input}:focus + && {
-    outline: 1px solid ${props => props.theme.crusta};
-    outline-offset: 2px;
   }
 `;
 
