@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 import OrderForm from '../../blocks/order-form/order-form.jsx';
 import CatalogProducts from '../../blocks/catalog-products/catalog-products.jsx';
-import {Catalog} from './style.js';
+import {Catalog, WarningNoProducts} from './style.js';
 import HiddenTitle from '../../ui/hidden-title/hidden-title.jsx';
 
 /**
@@ -35,7 +35,7 @@ function CatalogPage({products}) {
     }
   };
 
-  return (
+  return products && products.length ? (
     <Catalog className='wrapper'>
       <HiddenTitle level>Каталог продуктов</HiddenTitle>
       <OrderForm
@@ -46,6 +46,8 @@ function CatalogPage({products}) {
       />
       <CatalogProducts products={products} setSwiper={setSwiperRef}/>
     </Catalog>
+  ) : (
+    <WarningNoProducts>Продукты были слишком вкусные и их разобрали.:(</WarningNoProducts>
   );
 }
 
