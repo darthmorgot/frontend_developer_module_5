@@ -8,16 +8,34 @@ const products = [
     image: '/src/assets/img/photo-product-1.jpg',
     price: 543,
     weight: 700,
-    spec: {
-      weight: '0,7 кг. (595-805 г.).',
-      expiration_date: '6 суток',
-      breed: '',
-      place_origin: 'Тверская область',
-    },
-    features: {
-      energy_value: '135 ккал./565 кДж.',
-      nutritional_value: 'белки - 13,8 г., жиры - 8,7 г., углеводы - 0 г.; на 100 г.',
-    },
+    spec: [
+      {
+        property: 'Масса',
+        value: '0,7 кг. (595-805 г.).'
+      },
+      {
+        property: 'Срок годности',
+        value: '6 суток'
+      },
+      {
+        property: 'Порода',
+        value: ''
+      },
+      {
+        property: 'Место происхождения',
+        value: 'Тверская область'
+      }
+    ],
+    features: [
+      {
+        property: 'Энергетическая ценность',
+        value: '135 ккал./565 кДж.'
+      },
+      {
+        property: 'Пишевая ценность',
+        value: 'белки - 13,8 г., жиры - 8,7 г., углеводы - 0 г.; на 100 г.',
+      },
+    ]
   },
   {
     id: 1,
@@ -28,16 +46,34 @@ const products = [
     image: '/src/assets/img/photo-product-2.jpg',
     price: 729,
     weight: 85,
-    spec: {
-      weight: '85 гр.',
-      expiration_date: '30 суток',
-      breed: '',
-      place_origin: 'Московская облать, Егорьевский район',
-    },
-    features: {
-      energy_value: '135 ккал./565 кДж.',
-      nutritional_value: 'белки - 13,8 г., жиры - 8,7 г., углеводы - 0 г.; на 100 г.',
-    },
+    spec: [
+      {
+        property: 'Масса',
+        value: '85 гр.'
+      },
+      {
+        property: 'Срок годности',
+        value: '30 суток'
+      },
+      {
+        property: 'Порода',
+        value: ''
+      },
+      {
+        property: 'Место происхождения',
+        value: 'Московская облать, Егорьевский район'
+      }
+    ],
+    features: [
+      {
+        property: 'Энергетическая ценность',
+        value: '135 ккал./565 кДж.'
+      },
+      {
+        property: 'Пишевая ценность',
+        value: 'белки - 13,8 г., жиры - 8,7 г., углеводы - 0 г.; на 100 г.',
+      },
+    ]
   },
   {
     id: 2,
@@ -48,16 +84,34 @@ const products = [
     image: '/src/assets/img/photo-product-3.webp',
     price: 847,
     weight: 500,
-    spec: {
-      weight: '0,5 кг. (595-805 г.).',
-      expiration_date: '7 суток',
-      breed: '"Костромская" или "Голштинская".',
-      place_origin: 'Тверская область',
-    },
-    features: {
-      energy_value: '137,98 кКал./577,3 кДж.',
-      nutritional_value: 'белки - 20,2 г., жиры - 6,4 г., углеводы - 0 г.; на 100 г.',
-    },
+    spec: [
+      {
+        property: 'Масса',
+        value: '0,5 кг. (595-805 г.).'
+      },
+      {
+        property: 'Срок годности',
+        value: '7 суток'
+      },
+      {
+        property: 'Порода',
+        value: '"Костромская" или "Голштинская".'
+      },
+      {
+        property: 'Место происхождения',
+        value: 'Тверская область'
+      }
+    ],
+    features: [
+      {
+        property: 'Энергетическая ценность',
+        value: '137,98 кКал./577,3 кДж.'
+      },
+      {
+        property: 'Пишевая ценность',
+        value: 'белки - 20,2 г., жиры - 6,4 г., углеводы - 0 г.; на 100 г.',
+      },
+    ]
   },
   {
     id: 3,
@@ -68,16 +122,34 @@ const products = [
     image: '/src/assets/img/photo-product-4.webp',
     price: 830,
     weight: 1000,
-    spec: {
-      weight: '1.00 кг. (0.75-1.25кг.)',
-      expiration_date: '7 суток',
-      breed: 'КОББ 500.',
-      place_origin: 'Краснодарский край, район Славянский.',
-    },
-    features: {
-      energy_value: '201 ккал./841 кДж.',
-      nutritional_value: 'белки - 23,6 г., жиры - 1,9 г., углеводы - 0 г.; на 100 г.',
-    },
+    spec: [
+      {
+        property: 'Масса',
+        value: '1.00 кг. (0.75-1.25кг.).'
+      },
+      {
+        property: 'Срок годности',
+        value: '7 суток'
+      },
+      {
+        property: 'Порода',
+        value: 'КОББ 500.'
+      },
+      {
+        property: 'Место происхождения',
+        value: 'Краснодарский край, район Славянский.'
+      }
+    ],
+    features: [
+      {
+        property: 'Энергетическая ценность',
+        value: '201 ккал./841 кДж.'
+      },
+      {
+        property: 'Пишевая ценность',
+        value: 'белки - 23,6 г., жиры - 1,9 г., углеводы - 0 г.; на 100 г.',
+      },
+    ]
   },
   {
     id: 4,
@@ -88,16 +160,34 @@ const products = [
     image: '/src/assets/img/photo-product-5.webp',
     price: 400,
     weight: 500,
-    spec: {
-      weight: '0.5 кг. ( 0.3- 0.7 кг.).',
-      expiration_date: '7 суток',
-      breed: 'КОББ 500.',
-      place_origin: 'Россия',
-    },
-    features: {
-      energy_value: '210 кКал./836,8 кДж.',
-      nutritional_value: 'белки - 19 г., жиры - 14 г., углеводы - 0 г.; на 100 г.',
-    },
+    spec: [
+      {
+        property: 'Масса',
+        value: '0.5 кг. ( 0.3- 0.7 кг.).'
+      },
+      {
+        property: 'Срок годности',
+        value: '7 суток'
+      },
+      {
+        property: 'Порода',
+        value: 'КОББ 500.'
+      },
+      {
+        property: 'Место происхождения',
+        value: 'Краснодарский край, район Славянский.'
+      }
+    ],
+    features: [
+      {
+        property: 'Энергетическая ценность',
+        value: '210 кКал./836,8 кДж.'
+      },
+      {
+        property: 'Пишевая ценность',
+        value: 'белки - 19 г., жиры - 14 г., углеводы - 0 г.; на 100 г.',
+      },
+    ]
   },
 ];
 
