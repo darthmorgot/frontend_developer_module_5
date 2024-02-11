@@ -1,5 +1,5 @@
 import React from 'react';
-import {Dl, RowWrapper, Dt, Dd} from './style.js';
+import OptionList from '../option-list/option-list.jsx';
 
 /**
  * Компонент блока со свойствами на карточке товара
@@ -10,16 +10,7 @@ import {Dl, RowWrapper, Dt, Dd} from './style.js';
  */
 function TabFeature({activeTab, item}) {
   return activeTab === 'tab_2'
-    ? <Dl>
-      <RowWrapper>
-        <Dt>Энергетическая ценность:</Dt>
-        <Dd>{item.features.energy_value}</Dd>
-      </RowWrapper>
-      <RowWrapper>
-        <Dt>Пищевая ценность:</Dt>
-        <Dd>{item.features.nutritional_value}</Dd>
-      </RowWrapper>
-    </Dl>
+    ? <OptionList list={item.features}/>
     : null;
 }
 
