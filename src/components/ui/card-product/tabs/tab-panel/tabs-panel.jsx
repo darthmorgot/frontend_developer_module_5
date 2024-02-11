@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import React from 'react';
 import {StyledTabsPanel, ButtonTabsPanel} from './style.js';
 
 /**
@@ -9,15 +9,15 @@ import {StyledTabsPanel, ButtonTabsPanel} from './style.js';
  * @constructor
  */
 function TabsPanel({activeTab, handleClick}) {
-  const [buttons, setButton] = useState([
+  const buttonsTabsPanel = [
     {id: 'tab_0', name: 'Описание'},
     {id: 'tab_1', name: 'Характеристики'},
     {id: 'tab_2', name: 'Свойства'}
-  ]);
+  ];
 
   return (
     <StyledTabsPanel>
-      {buttons.map(button => (
+      {buttonsTabsPanel.map(button => (
         <ButtonTabsPanel
           key={button.id}
           id={button.id}
