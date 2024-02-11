@@ -1,15 +1,12 @@
 import styled from 'styled-components';
 import {StyleButton} from '../../../button/style.js';
+import {p} from '../../../../styled/index.js';
 
-const Paragraph = styled.p`
-  margin: 0;
-`;
-
-export const Text = styled(Paragraph)`
+export const Text = styled(p)`
   margin-bottom: 14px;
 `;
 
-export const Price = styled(Paragraph)`
+export const Price = styled(p)`
   width: fit-content;
   padding: 4px 8px;
   background-color: ${props => props.theme.pattensBlue};
