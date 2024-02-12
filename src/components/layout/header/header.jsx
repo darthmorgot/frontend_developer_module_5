@@ -5,17 +5,15 @@ import {StyledHeader, HeaderWrapper} from './style.js';
 
 /**
  * Компонент хедера на странице сайта
- * @param page props Данные о странице сайта поступает из PageWrapper
- * @param setPage props Коллбэк поступает из PageWrapper
  * @returns {JSX.Element} Разметка хедера
  * @constructor
  */
-function Header({page, setPage}) {
+function Header() {
   return (
     <StyledHeader>
       <HeaderWrapper className='wrapper'>
         <Logo/>
-        <Nav page={page} setPage={setPage}/>
+        <Nav/>
       </HeaderWrapper>
     </StyledHeader>
   );
