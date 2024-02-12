@@ -1,6 +1,8 @@
 import React from 'react';
-import {StyledLogo, LogoText} from './style.js';
 import LogoImage from 'Images/logo.svg?react';
+import {AppRoute} from '../../../AppRoute.js';
+import {useLocation} from 'react-router-dom';
+import {StyledLogo, StyledLogoMainPage, LogoText} from './style.js';
 
 /**
  * Компонент блока с логотипом
@@ -8,9 +10,16 @@ import LogoImage from 'Images/logo.svg?react';
  * @constructor
  */
 function Logo() {
-  return (
-    <StyledLogo href='/' className='logo-link'>
-      <LogoImage role='img' aria-label='Логотип Фермерского магазина'/>
+  const {pathname} = useLocation();
+
+  return pathname === AppRoute.MAIN ? (
+    <StyledLogoMainPage>
+      <LogoImage role="img" aria-label="Логотип Фермерского магазина"/>
+      <LogoText>Фермерские продукты</LogoText>
+    </StyledLogoMainPage>
+  ) : (
+    <StyledLogo to={AppRoute.MAIN} className="logo-link">
+      <LogoImage role="img" aria-label="Логотип Фермерского магазина"/>
       <LogoText>Фермерские продукты</LogoText>
     </StyledLogo>
   );
