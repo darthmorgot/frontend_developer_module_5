@@ -1,8 +1,9 @@
-import {useEffect, useState} from 'react';
+import {useState} from 'react';
 import OrderForm from '../../blocks/order-form/order-form.jsx';
 import CatalogProducts from '../../blocks/catalog-products/catalog-products.jsx';
 import {Catalog, WarningNoProducts} from './style.js';
 import HiddenTitle from '../../ui/hidden-title/hidden-title.jsx';
+import TitlePage from '../../ui/title-page/title-page.jsx';
 
 /**
  * Компонент страницы каталога товаров
@@ -11,10 +12,6 @@ import HiddenTitle from '../../ui/hidden-title/hidden-title.jsx';
  * @constructor
  */
 function CatalogPage({products}) {
-  useEffect(() => {
-    document.title = 'Каталог | Фермерский магазин';
-  }, []);
-
   const [selectedProductIds, setSelectedProductIds] = useState([]);
   const [swiperRef, setSwiperRef] = useState(null);
 
@@ -36,16 +33,19 @@ function CatalogPage({products}) {
   };
 
   return products && products.length ? (
-    <Catalog className='wrapper'>
-      <HiddenTitle level>Каталог продуктов</HiddenTitle>
-      <OrderForm
-        products={products}
-        selectedValues={selectedProductIds}
-        setSelectedValues={handleSelectedProductIds}
-        slideToSelectProduct={handleSwiperRef}
-      />
-      <CatalogProducts products={products} setSwiper={setSwiperRef}/>
-    </Catalog>
+    <>
+      <TitlePage namePage={'Каталог | Фермерский магазин'}/>
+      <Catalog className='wrapper'>
+        <HiddenTitle level>Каталог продуктов</HiddenTitle>
+        <OrderForm
+          products={products}
+          selectedValues={selectedProductIds}
+          setSelectedValues={handleSelectedProductIds}
+          slideToSelectProduct={handleSwiperRef}
+        />
+        <CatalogProducts products={products} setSwiper={setSwiperRef}/>
+      </Catalog>
+    </>
   ) : (
     <WarningNoProducts>Продукты были слишком вкусные и их разобрали.:(</WarningNoProducts>
   );
