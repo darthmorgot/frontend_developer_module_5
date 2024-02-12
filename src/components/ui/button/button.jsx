@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleButton} from './style.js';
+import {StyledButton} from './style.js';
 
 /**
  * Компонент кнопки
@@ -14,16 +14,16 @@ import {StyleButton} from './style.js';
  */
 function Button({classButton, link, maxWidth, dataButton, handleButton, children}) {
   return (
-    <StyleButton
+    <StyledButton
       className={classButton ? classButton : null}
-      {...(link ? null : {as: 'button'})}
+      {...(link ? {to: link} : {as: 'button'})}
       $maxWidth={maxWidth}
       data-page={dataButton}
       onClick={handleButton}
       tabIndex='0'
     >
       {children}
-    </StyleButton>
+    </StyledButton>
   );
 }
 
