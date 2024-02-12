@@ -1,19 +1,28 @@
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
+import {Link} from 'react-router-dom';
 
-export const StyledLogo = styled.a`
+const logoStyle = css`
   display: flex;
   align-items: center;
   margin-bottom: 8px;
   margin-top: 8px;
 
+  svg {
+    margin-right: 24px;
+  }
+`;
+
+export const StyledLogo = styled(Link)`
+  ${logoStyle}
+
   &:focus {
     outline: 1px solid ${props => props.theme.crusta};
     outline-offset: 2px;
   }
+`;
 
-  svg {
-    margin-right: 24px;
-  }
+export const StyledLogoMainPage = styled.span`
+  ${logoStyle}
 `;
 
 export const LogoText = styled.span`
