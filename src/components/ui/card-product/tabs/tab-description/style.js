@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {StyleButton} from '../../../button/style.js';
+import {StyledButton} from '../../../button/style.js';
 import {p} from '../../../../styled/index.js';
 
 export const Text = styled(p)`
@@ -19,7 +19,7 @@ export const WrapperPriceDescription = styled.div`
   justify-content: space-between;
 `;
 
-export const DescriptionButton = styled(StyleButton)`
+export const DescriptionButton = styled(StyledButton)`
   width: auto;
   padding: 0;
   margin: 0;
