@@ -1,29 +1,20 @@
 import React, {useState} from 'react';
+import {Outlet} from 'react-router-dom';
 import Header from '../header/header';
 import Footer from '../footer/footer';
-import MainPage from '../../pages/main-page/main-page';
-import CatalogPage from '../../pages/catalog-page/catalog-page.jsx';
 import {Main} from './style.js';
 
 /**
  * Компонент обертка для страниц сайта
- * @param products props Данные о товарах поступают из App
- * @param features props Данные о преимуществах поступают из App
  * @returns {JSX.Element} Разметка страницы
  * @constructor
  */
-function PageWrapper({products = [], features = []}) {
-  const [page, setPage] = useState('main-page');
-
-  function handlePage(e) {
-    setPage(e.target.dataset.page);
-  }
-
+function PageWrapper() {
   return (
     <>
-      <Header page={page} setPage={handlePage}/>
+      <Header/>
       <Main>
-        {page === 'main-page' ? <MainPage setPage={handlePage} features={features} /> : <CatalogPage products={products}/>}
+        <Outlet/>
       </Main>
       <Footer />
     </>
