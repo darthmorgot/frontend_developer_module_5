@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {StyleButton} from '../../../ui/button/style.js';
+import {StyledButton} from '../../../ui/button/style.js';
 
 export const OrderFieldset = styled.fieldset`
   padding: 23px 20px 20px 19px;
@@ -65,7 +65,7 @@ export const Output = styled.output`
   line-height: 130%;
 `;
 
-export const SubmitButton = styled(StyleButton).attrs({type: 'submit'})`
+export const SubmitButton = styled(StyledButton).attrs({type: 'submit'})`
   &:disabled {
     opacity: 0.5;
     cursor: auto;
