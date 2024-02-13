@@ -21,12 +21,13 @@ const navElements = [
  * @constructor
  */
 function Nav() {
-  const pageUrl = useLocation().pathname;
+  const {pathname} = useLocation();
+
   return (
     <StyledNav>
       {
         navElements
-          .filter(navElement => navElement.to === pageUrl)
+          .filter(navElement => navElement.to === pathname)
           .map(navElement => navElement.item)
       }
     </StyledNav>
