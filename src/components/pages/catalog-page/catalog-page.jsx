@@ -15,7 +15,7 @@ function CatalogPage({products}) {
   const [selectedProductIds, setSelectedProductIds] = useState([]);
   const [swiperRef, setSwiperRef] = useState(null);
 
-  function handleSelectedProductIds(value) {
+  const handleSelectedProductIds = (value) => {
     const newValues = [...selectedProductIds];
     const indexValue = newValues.indexOf(value);
     if (indexValue !== -1) {
