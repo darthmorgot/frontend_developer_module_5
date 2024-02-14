@@ -14,7 +14,7 @@ import {StyledTabs, TabsWrapper, TabsItem} from './style.js';
 function Tabs({item}) {
   const [activeTab, setActiveTab] = useState('tab_0');
 
-  function handleClick(e) {
+  const handleClick = (e) => {
     setActiveTab(e.target.id);
   }
 
