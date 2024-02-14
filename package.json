@@ -1,15 +1,27 @@
 {
-  "name": "frontend_developer_module_5",
-  "private": true,
+  "name": "farm-shop",
+  "description": "Проект «Фермерский магазин» от HTML Academy, Профессия «Фронтенд-разработчик 2», Модуль 5. Вёрстка React-компонентов",
+  "author": "Master",
   "version": "1.0.0",
+  "license": "ISC",
+  "private": true,
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darthmorgot/frontend_developer_module_5"
+  },
+  "bugs": {
+    "url": "https://github.com/darthmorgot/frontend_developer_module_5/issues"
+  },
+  "homepage": "https://github.com/darthmorgot/frontend_developer_module_5#readme",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "eslint": "eslint ./src"
   },
   "dependencies": {
+    "globals": "^14.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.0",
@@ -17,16 +29,42 @@
     "swiper": "^11.0.6"
   },
   "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/eslint-parser": "^7.23.10",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-react": "^7.23.3",
+    "@eslint/js": "^8.56.0",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.55.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-jsdoc": "^48.0.6",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "stylelint": "^16.2.0",
-    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint": "^16.2.1",
+    "stylelint-config-htmlacademy": "^4.0.5",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0",
     "vite": "^5.0.8",
     "vite-plugin-svgr": "^4.2.0"
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   }
 }
