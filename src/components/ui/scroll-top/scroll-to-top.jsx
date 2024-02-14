@@ -3,7 +3,7 @@ import {useLocation} from 'react-router-dom';
 
 /**
  * Компонент для обнуления скрола при переходе на страницу
- * @returns {null}
+ * @returns {null} Ничего не возвращает
  * @constructor
  */
 function ScrollToTop() {
