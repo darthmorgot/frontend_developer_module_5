@@ -16,9 +16,9 @@ const navElements = [
 ];
 
 /**
- * Компонент блока навигации в шапке сайте
- * @returns {JSX.Element} Разметка блока
- * @constructor
+ * Компонент блока навигации в шапке сайте.
+ * @returns {JSX.Element} Разметка блока.
+ * @class
  */
 function Nav() {
   const {pathname} = useLocation();
