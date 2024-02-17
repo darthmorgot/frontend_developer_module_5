@@ -1,3 +1,7 @@
+/**
+ * @file Общие переменные для стилей, задающих цвет.
+ * @type {{mineShaft: string, wildSand: string, blackZeroFour: string, black: string, blackZeroOneFour: string, flamingo: string, chromeWhite: string, seaBuckthorn: string, white: string, crusta: string, pattensBlue: string, linen: string, chelseaCucumber: string, blackZeroTen: string}}
+ */
 export const defaultTheme = {
   white: '#ffffff',
   black: '#000000',
