@@ -2,15 +2,15 @@ import React from 'react';
 import {StyledButton} from './style.js';
 
 /**
- * Компонент кнопки
- * @param classButton props Данные о классе поступают на месте применения
- * @param link props Данные о ссылке поступают на месте применения
- * @param maxWidth props Данные о размере поступают на месте применения
- * @param dataButton props Данные о странице поступают на месте применения
- * @param handleButton props Коллбэк поступает на месте применения
- * @param children props Данные о контенте поступают на месте применения
- * @returns {JSX.Element} Разметка кнопки
- * @constructor
+ * Компонент кнопки.
+ * @param {string} classButton Данные (props) о классе поступают на месте применения.
+ * @param {string} link Данные (props) о ссылке поступают на месте применения.
+ * @param {boolean} maxWidth Данные (props) о размере поступают на месте применения.
+ * @param {string} dataButton Данные (props) о странице поступают на месте применения.
+ * @param {Function} handleButton Коллбэк (props) поступает на месте применения.
+ * @param {string} children Данные (props) о контенте поступают на месте применения.
+ * @returns {JSX.Element} Разметка кнопки.
+ * @class
  */
 function Button({classButton, link, maxWidth, dataButton, handleButton, children}) {
   return (
