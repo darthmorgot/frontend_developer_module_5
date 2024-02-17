@@ -11,13 +11,13 @@ import {
 } from './style.js';
 
 /**
- * Компонент поля формы для выбора товара из списка на странице каталога
- * @param products props Данные продукта поступают из OrderForm
- * @param selectedValues props Данные о выбранных продуктах поступают из OrderForm
- * @param setSelectedValues props Коллбэк поступает из OrderForm
- * @param slideToSelectProduct props Коллбэк поступает из OrderForm
- * @returns {JSX.Element} Разметка поля формы
- * @constructor
+ * Компонент поля формы для выбора товара из списка на странице каталога.
+ * @param {object} products Данные (props) продукта поступают из OrderForm.
+ * @param {object} selectedValues Данные (props) о выбранных продуктах поступают из OrderForm.
+ * @param {Function} setSelectedValues Коллбэк (props) поступает из OrderForm.
+ * @param {Function} slideToSelectProduct Коллбэк (props) поступает из OrderForm.
+ * @returns {JSX.Element} Разметка поля формы.
+ * @class
  */
 function ProductSelectionField({
                                  products,
