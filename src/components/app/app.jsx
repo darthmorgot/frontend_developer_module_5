@@ -11,9 +11,9 @@ import products from '../../mocks/products.js';
 import features from '../../mocks/features.js';
 
 /**
- * Основной компонент проекта
- * @returns {JSX.Element} Разметка страниц проекта
- * @constructor
+ * Основной компонент проекта.
+ * @returns {JSX.Element} Разметка страниц проекта.
+ * @class
  */
 export default function App() {
 
