@@ -1,10 +1,10 @@
 import {useEffect} from 'react';
 
 /**
- * Компонент для установки названия страницы
- * @param namePage props Данные о названии страницы поступают из места применения
- * @returns {null} Ничего не возвращает
- * @constructor
+ * Компонент для установки названия страницы.
+ * @param {string} namePage Данные (props) о названии страницы поступают из места применения.
+ * @returns {null} Ничего не возвращает.
+ * @class
  */
 function TitlePage({namePage}) {
   useEffect(() => {
