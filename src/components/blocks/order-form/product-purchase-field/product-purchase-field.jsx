@@ -14,12 +14,12 @@ import {
 } from './style.js';
 
 /**
- * Компонент поля формы с адресом, ценой и кнопкой покупки на странице каталога
- * @param price props Данные с ценой заказа поступают из OrderForm
- * @param buy props Коллбэк поступает из OrderForm
- * @param isDisabled props Данные для активации/деактивации кнопки "Купить"
- * @returns {JSX.Element} Разметка поля формы
- * @constructor
+ * Компонент поля формы с адресом, ценой и кнопкой покупки на странице каталога.
+ * @param {number} price Данные (props) с ценой заказа поступают из OrderForm.
+ * @param {Function} buy Коллбэк (props) поступает из OrderForm.
+ * @param {boolean} isDisabled Данные (props) для активации/деактивации кнопки "Купить".
+ * @returns {JSX.Element} Разметка поля формы.
+ * @class
  */
 function ProductPurchaseField({price = 0, buy, isDisabled}) {
   const [address, setAddress] = useState('');
