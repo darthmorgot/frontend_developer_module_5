@@ -5,13 +5,13 @@ import HiddenTitle from '../../ui/hidden-title/hidden-title.jsx';
 import {Section, Form} from './style.js';
 
 /**
- * Компонент формы заказа на странице каталога
- * @param products props Моковые данные поступают из CatalogPage
- * @param selectedValues props Данные о выбранных продуктах поступают из CatalogPage
- * @param setSelectedValues props Коллбэк поступает из CatalogPage
- * @param slideToSelectProduct props Коллбэк поступает из CatalogPage
- * @returns {JSX.Element} Разметка формы
- * @constructor
+ * Компонент формы заказа на странице каталога.
+ * @param {object} products Моковые данные (props) поступают из CatalogPage.
+ * @param {object} selectedValues Данные (props) о выбранных продуктах поступают из CatalogPage.
+ * @param {Function} setSelectedValues Коллбэк (props) поступает из CatalogPage.
+ * @param {Function} slideToSelectProduct Коллбэк (props) поступает из CatalogPage.
+ * @returns {JSX.Element} Разметка формы.
+ * @class
  */
 function OrderForm({products, selectedValues, setSelectedValues, slideToSelectProduct}) {
   const arraySelectedProducts = products.filter(item => selectedValues.includes(item.id));
