@@ -3,9 +3,9 @@ import Title, {TitleSize, TitleLevel} from '../../ui/title/title.jsx';
 import {Section, AboutWrapper, TextWrapper, Description} from './style.js';
 
 /**
- * Компонент блока About на главной странице
- * @returns {JSX.Element} Разметка блока
- * @constructor
+ * Компонент блока About на главной странице.
+ * @returns {JSX.Element} Разметка блока.
+ * @class
  */
 function About() {
   return (
