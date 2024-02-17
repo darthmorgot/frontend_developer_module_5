@@ -1,3 +1,7 @@
+/**
+ * @file Моковые данные для блока преимущев на главной странице.
+ * @type {[{isNegative: boolean, icon: string, description: string, id: number, category: string, title: string},{isNegative: boolean, icon: string, description: string, id: number, category: string, title: string},{isNegative: boolean, icon: string, description: string, id: number, category: string, title: string},{isNegative: boolean, icon: string, description: string, id: number, category: string, title: string}]}
+ */
 const features = [
   {
     id: 0,
