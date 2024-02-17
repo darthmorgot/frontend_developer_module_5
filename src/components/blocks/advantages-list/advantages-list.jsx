@@ -6,13 +6,12 @@ import {Section, Slogan, List, ListItem} from './style.js';
 import {AppRoute} from '../../../AppRoute.js';
 
 /**
- * Компонент блока со списком преимуществ на главной странице
- * @param setPage props Данные о странице поступают из MainPage
- * @param features props Данные для списка преимуществ поступает из MainPage
- * @returns {JSX.Element|null} Разметка блока
- * @constructor
+ * Компонент блока со списком преимуществ на главной странице.
+ * @param {object} features Данные (props) для списка преимуществ поступает из MainPage.
+ * @returns {JSX.Element|null} Разметка блока.
+ * @class
  */
-function AdvantagesList({setPage, features}) {
+function AdvantagesList({features}) {
   return features && features.length ? (
     <Section className='wrapper'>
       <HiddenTitle>Преимущества фермерских продуктов</HiddenTitle>
@@ -24,7 +23,7 @@ function AdvantagesList({setPage, features}) {
             </ListItem>
           ))}
         </List>
-      <Button classButton={'advantages__link'} link={AppRoute.BUY} dataButton={'catalog-page'} handleButton={setPage}>Купить</Button>
+      <Button classButton={'advantages__link'} link={AppRoute.BUY} dataButton={'catalog-page'}>Купить</Button>
     </Section>
   ) : null;
 }
