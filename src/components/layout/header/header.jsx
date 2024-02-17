@@ -4,9 +4,9 @@ import Nav from '../nav/nav';
 import {StyledHeader, HeaderWrapper} from './style.js';
 
 /**
- * Компонент хедера на странице сайта
- * @returns {JSX.Element} Разметка хедера
- * @constructor
+ * Компонент хедера на странице сайта.
+ * @returns {JSX.Element} Разметка хедера.
+ * @class
  */
 function Header() {
   return (
