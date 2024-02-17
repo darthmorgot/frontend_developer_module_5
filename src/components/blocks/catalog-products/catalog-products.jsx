@@ -7,11 +7,11 @@ import 'swiper/css/scrollbar';
 import {Section, ProductList, ListItem} from './style.js';
 
 /**
- * Компонент списка с товарами на странице каталога
- * @param products props Данные о товарах поступают из CatalogPage
- * @param setSwiper props Коллбэк поступает из CatalogPage
- * @returns {JSX.Element} Разметка списка
- * @constructor
+ * Компонент списка с товарами на странице каталога.
+ * @param {object} products Данные (props) о товарах поступают из CatalogPage.
+ * @param {Function} setSwiper Коллбэк (props) поступает из CatalogPage.
+ * @returns {JSX.Element} Разметка списка.
+ * @class
  */
 function CatalogProducts({products, setSwiper}) {
   return (
