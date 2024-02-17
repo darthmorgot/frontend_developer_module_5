@@ -6,10 +6,10 @@ import TabFeature from './tab-feature/tab-feature.jsx';
 import {StyledTabs, TabsWrapper, TabsItem} from './style.js';
 
 /**
- * Компонент блока вкладок на карточке товара
- * @param item props Данные о товаре поступают из CardProduct
- * @returns {JSX.Element} Разметка блока вкладок
- * @constructor
+ * Компонент блока вкладок на карточке товара.
+ * @param {object} item Данные (props) о товаре поступают из CardProduct.
+ * @returns {JSX.Element} Разметка блока вкладок.
+ * @class
  */
 function Tabs({item}) {
   const [activeTab, setActiveTab] = useState('tab_0');
