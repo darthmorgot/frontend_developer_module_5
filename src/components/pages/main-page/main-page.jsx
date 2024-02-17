@@ -4,10 +4,10 @@ import AdvantagesList from '../../blocks/advantages-list/advantages-list.jsx';
 import TitlePage from '../../ui/title-page/title-page.jsx';
 
 /**
- * Компонент главной страницы сайта
- * @param features props Данные для списка преимуществ поступает из PageWrapper
- * @returns {JSX.Element} Разметка главной страницы
- * @constructor
+ * Компонент главной страницы сайта.
+ * @param {object} features Данные (props) для списка преимуществ поступает из PageWrapper.
+ * @returns {JSX.Element} Разметка главной страницы.
+ * @class
  */
 function MainPage({features}) {
   return (
