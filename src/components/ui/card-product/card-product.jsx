@@ -4,10 +4,10 @@ import Tabs from './tabs/tabs.jsx';
 import {Card, Image} from './style.js';
 
 /**
- * Компонент элемента списка товаров с карточкой товара
- * @param products props Данные о товаре поступают из CatalogProducts
- * @returns {*|null} Разметка элемента списка
- * @constructor
+ * Компонент элемента списка товаров с карточкой товара.
+ * @param {object} product Данные (props) о товаре поступают из CatalogProducts.
+ * @returns {*|null} Разметка элемента списка.
+ * @class
  */
 function CardProduct({product}) {
   return <Card>
