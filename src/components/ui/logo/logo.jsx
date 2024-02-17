@@ -5,9 +5,9 @@ import {useLocation} from 'react-router-dom';
 import {StyledLogo, StyledLogoMainPage, LogoText} from './style.js';
 
 /**
- * Компонент блока с логотипом
- * @returns {JSX.Element|null} Разметка блока
- * @constructor
+ * Компонент блока с логотипом.
+ * @returns {JSX.Element|null} Разметка блока.
+ * @class
  */
 function Logo() {
   const {pathname} = useLocation();
