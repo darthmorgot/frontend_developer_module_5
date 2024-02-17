@@ -1,5 +1,6 @@
 import {useState} from 'react';
-import Title, {TitleSize, TitleLevel} from '../../../ui/title/title.jsx';
+import Title from '../../../ui/title/title.jsx';
+import {TitleLevel, TitleSize} from '../../../ui/title/title-level-size.js';
 import {
   OrderFieldset,
   Address,
