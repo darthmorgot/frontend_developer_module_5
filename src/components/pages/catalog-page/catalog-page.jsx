@@ -6,10 +6,10 @@ import HiddenTitle from '../../ui/hidden-title/hidden-title.jsx';
 import TitlePage from '../../ui/title-page/title-page.jsx';
 
 /**
- * Компонент страницы каталога товаров
- * @param products props Данные о продуктах поступают из PageWrapper
- * @returns {JSX.Element} Разметка страницы каталога
- * @constructor
+ * Компонент страницы каталога товаров.
+ * @param {object} products Данные (props) о продуктах поступают из PageWrapper.
+ * @returns {JSX.Element} Разметка страницы каталога.
+ * @class
  */
 function CatalogPage({products}) {
   const [selectedProductIds, setSelectedProductIds] = useState([]);
