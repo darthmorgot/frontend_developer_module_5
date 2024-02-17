@@ -2,11 +2,11 @@ import React from 'react';
 import {StyledTabsPanel, ButtonTabsPanel} from './style.js';
 
 /**
- * Компонент панели с кнопками вкладок на карточке товара
- * @param activeTab props Данные об активной вкладке поступают из Tabs
- * @param handleClick props Коллбэк поступает из Tabs
- * @returns {JSX.Element} Разметка панели
- * @constructor
+ * Компонент панели с кнопками вкладок на карточке товара.
+ * @param {string} activeTab Данные (props) об активной вкладке поступают из Tabs.
+ * @param {Function} handleClick Коллбэк (props) поступает из Tabs.
+ * @returns {JSX.Element} Разметка панели.
+ * @class
  */
 function TabsPanel({activeTab, handleClick}) {
   const buttonsTabsPanel = [
