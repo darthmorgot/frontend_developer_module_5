@@ -4,9 +4,9 @@ import {TitleErrorWrapper} from './style.js';
 import TitlePage from '../../ui/title-page/title-page.jsx';
 
 /**
- * Компонент страницы с ошибкой 404
- * @returns {JSX.Element} Разметка страницы
- * @constructor
+ * Компонент страницы с ошибкой 404.
+ * @returns {JSX.Element} Разметка страницы.
+ * @class
  */
 function Error404() {
   return (
