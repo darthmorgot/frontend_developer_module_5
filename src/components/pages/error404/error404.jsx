@@ -1,5 +1,6 @@
 import React from 'react';
-import Title, {TitleLevel, TitleSize} from '../../ui/title/title.jsx';
+import Title from '../../ui/title/title.jsx';
+import {TitleLevel, TitleSize} from '../../ui/title/title-level-size.js';
 import {TitleErrorWrapper} from './style.js';
 import TitlePage from '../../ui/title-page/title-page.jsx';
 
