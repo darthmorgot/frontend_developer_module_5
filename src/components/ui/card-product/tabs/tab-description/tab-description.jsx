@@ -2,11 +2,11 @@ import {useState} from 'react';
 import {Text, WrapperPriceDescription, DescriptionButton, Price} from './style.js';
 
 /**
- * Компонент блока с описанием на карточке товара
- * @param activeTab props Данные об активной вкладке поступают из Tabs
- * @param item props Данные о продукте поступают из Tabs
- * @returns {JSX.Element|null} Разметка блока
- * @constructor
+ * Компонент блока с описанием на карточке товара.
+ * @param {string} activeTab Данные (props) об активной вкладке поступают из Tabs.
+ * @param {object} item Данные (props) о продукте поступают из Tabs.
+ * @returns {JSX.Element|null} Разметка блока.
+ * @class
  */
 function TabDescription({activeTab, item}) {
   const MAX_TEXT_SIZE = 250;
