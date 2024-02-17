@@ -1,11 +1,11 @@
 import React from 'react';
 
 /**
- * Компонент скрытого заголовка
- * @param level props Данные об уровне заголовка определяется на месте применения
- * @param children props Данные текст заголовка определяется на месте применения
- * @returns {JSX.Element} Разметка заголовка
- * @constructor
+ * Компонент скрытого заголовка.
+ * @param {string} level Данные (props) об уровне заголовка определяется на месте применения.
+ * @param {string} children Данные (props) текст заголовка определяется на месте применения.
+ * @returns {JSX.Element} Разметка заголовка.
+ * @class
  */
 function HiddenTitle({level, children}) {
   return (
