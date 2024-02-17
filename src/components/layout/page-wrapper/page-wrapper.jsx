@@ -5,9 +5,9 @@ import Footer from '../footer/footer';
 import {Main} from './style.js';
 
 /**
- * Компонент обертка для страниц сайта
- * @returns {JSX.Element} Разметка страницы
- * @constructor
+ * Компонент обертка для страниц сайта.
+ * @returns {JSX.Element} Разметка страницы.
+ * @class
  */
 function PageWrapper() {
   return (
