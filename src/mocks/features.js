@@ -1,3 +1,5 @@
+import {ImagePath, IconImages} from '../imageConfig.js';
+
 /**
  * @file Моковые данные для блока преимущев на главной странице.
  * @type {[{isNegative: boolean, icon: string, description: string, id: number, category: string, title: string},{isNegative: boolean, icon: string, description: string, id: number, category: string, title: string},{isNegative: boolean, icon: string, description: string, id: number, category: string, title: string},{isNegative: boolean, icon: string, description: string, id: number, category: string, title: string}]}
@@ -8,7 +10,7 @@ const features = [
     category: 'Фермерские продукты',
     title: 'Еда намного вкуснее',
     description: 'Домашняя колбаса из мяса, соли и специй и колбаса <br/> из магазина — два настолько разных продукта, <br/> что они даже не родственники',
-    icon: '/src/assets/img/icon-eat.svg',
+    icon: IconImages[`${ImagePath}icon-eat.svg`].default,
     isNegative: false
   },
   {
@@ -16,7 +18,7 @@ const features = [
     category: 'Магазинные продукты',
     title: 'Просроченные продукты',
     description: 'Из-за большого количество товара сотрудники магазинов не успевают своевременно производить замену товара',
-    icon: '/src/assets/img/icon-garbage.svg',
+    icon: IconImages[`${ImagePath}icon-garbage.svg`].default,
     isNegative: true
   },
   {
@@ -24,7 +26,7 @@ const features = [
     category: 'Фермерские продукты',
     title: 'Натуральные продукты',
     description: 'Поставляем местные органические продукты выращенные без пестицидов и химических удобрений.',
-    icon: '/src/assets/img/icon-sprout.svg',
+    icon: IconImages[`${ImagePath}icon-sprout.svg`].default,
     isNegative: false
   },
   {
@@ -32,7 +34,7 @@ const features = [
     category: 'Магазинные продукты',
     title: 'Некачественное мясо',
     description: 'Мясные полуфабрикаты, в которых содержится чрезмерно много натрия, вредных жиров, консервантов',
-    icon: '/src/assets/img/icon-no-meat.svg',
+    icon: IconImages[`${ImagePath}icon-no-meat.svg`].default,
     isNegative: true
   },
 ];
