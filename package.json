@@ -19,7 +19,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "eslint": "eslint --ext .jsx --ext .js ./src/",
-    "csslint": "stylelint ./src/**/*.{js,jsx}"
+    "stylelint": "stylelint ./src/**/*.{js,jsx}"
   },
   "dependencies": {
     "globals": "^14.0.0",
