@@ -14,7 +14,7 @@ function Error404() {
     <>
       <TitlePage namePage={'Фермерский магазин'}/>
       <TitleErrorWrapper>
-        <Title level={TitleLevel.H1} size={TitleSize.BIG}>Ошибка 404. Страница не существует.</Title>
+        <Title level={TitleLevel.H1} size={TitleSize.BIG}>Ошибка 404. Страницы не существует.</Title>
       </TitleErrorWrapper>
     </>
   );
