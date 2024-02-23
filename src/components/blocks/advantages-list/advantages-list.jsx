@@ -3,7 +3,7 @@ import HiddenTitle from '../../ui/hidden-title/hidden-title.jsx';
 import AdvantageCard from '../../ui/advantage-card/advantage-card.jsx';
 import Button from '../../ui/button/button.jsx';
 import {Section, Slogan, List, ListItem} from './style.js';
-import {AppRoute} from '../../../AppRoute.js';
+import {AppRoute} from '@/AppRoute.js';
 
 /**
  * Компонент блока со списком преимуществ на главной странице.
