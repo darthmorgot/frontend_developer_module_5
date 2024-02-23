@@ -1,7 +1,7 @@
 import React from 'react';
 import {useLocation} from 'react-router-dom';
 import Button from '../../ui/button/button.jsx';
-import {AppRoute} from '../../../AppRoute.js';
+import {AppRoute} from '@/AppRoute.js';
 import {StyledNav, Anchor} from './style.js';
 
 const navElements = [
