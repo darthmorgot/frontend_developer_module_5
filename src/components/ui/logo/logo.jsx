@@ -1,6 +1,6 @@
 import React from 'react';
 import LogoImage from 'Images/logo.svg?react';
-import {AppRoute} from '../../../AppRoute.js';
+import {AppRoute} from '@/AppRoute.js';
 import {useLocation} from 'react-router-dom';
 import {StyledLogo, StyledLogoMainPage, LogoText} from './style.js';
 
