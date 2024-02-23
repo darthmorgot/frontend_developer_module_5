@@ -1,14 +1,14 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import PageWrapper from '/src/components/layout/page-wrapper/page-wrapper';
+import PageWrapper from '@/components/layout/page-wrapper/page-wrapper';
 import MainPage from '../pages/main-page/main-page.jsx';
 import CatalogPage from '../pages/catalog-page/catalog-page.jsx';
 import Error404 from '../pages/error404/error404.jsx';
-import {AppRoute} from '../../AppRoute.js';
+import {AppRoute} from '@/AppRoute.js';
 import ScrollToTop from '../ui/scroll-top/scroll-to-top.jsx';
 import {GlobalStyle} from './style.js';
-import products from '../../mocks/products.js';
-import features from '../../mocks/features.js';
+import products from '@/mocks/products.js';
+import features from '@/mocks/features.js';
 
 /**
  * Основной компонент проекта.
