@@ -1,4 +1,4 @@
-import {ImagePath, IconImages} from '../imageConfig.js';
+import {ImagePath, IconImages} from '@/imageConfig.js';
 
 /**
  * @file Моковые данные для блока преимущев на главной странице.
