@@ -1,4 +1,4 @@
-import {ImagePath, ProductImages} from '../imageConfig.js';
+import {ImagePath, ProductImages} from '@/imageConfig.js';
 
 /**
  * @file Моковые данные для проекта.
