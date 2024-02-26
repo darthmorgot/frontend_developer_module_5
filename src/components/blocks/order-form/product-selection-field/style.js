@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import {Ul} from '@/components/styled/index.js';
+import {Label} from '@/components/styled/index.js';
 import tick from 'Images/tick.png';
 
 export const SelectFieldset = styled.fieldset`
@@ -15,10 +17,8 @@ export const SelectFieldset = styled.fieldset`
   }
 `;
 
-export const SelectList = styled.ul`
+export const SelectList = styled(Ul)`
   margin: 0 0 0 -1px;
-  padding: 0;
-  list-style: none;
 `;
 
 export const ListItem = styled.li`
@@ -29,7 +29,7 @@ export const ListItem = styled.li`
   }
 `;
 
-export const Label = styled.label`
+export const StyledLabel = styled(Label)`
   display: flex;
   justify-content: space-between;
   cursor: pointer;
