@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../ui/logo/logo.jsx';
+import Logo from '@/components/ui/logo/logo.jsx';
 import {StyledFooter, FooterWrapper, FooterCopyright} from './style.js';
 
 /**

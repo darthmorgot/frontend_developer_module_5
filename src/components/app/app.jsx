@@ -1,11 +1,11 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import PageWrapper from '@/components/layout/page-wrapper/page-wrapper';
-import MainPage from '../pages/main-page/main-page.jsx';
-import CatalogPage from '../pages/catalog-page/catalog-page.jsx';
-import Error404 from '../pages/error404/error404.jsx';
+import MainPage from '@/components/pages/main-page/main-page.jsx';
+import CatalogPage from '@/components/pages/catalog-page/catalog-page.jsx';
+import Error404 from '@/components/pages/error404/error404.jsx';
 import {AppRoute} from '@/AppRoute.js';
-import ScrollToTop from '../ui/scroll-top/scroll-to-top.jsx';
+import ScrollToTop from '@/components/ui/scroll-top/scroll-to-top.jsx';
 import {GlobalStyle} from './style.js';
 import products from '@/mocks/products.js';
 import features from '@/mocks/features.js';

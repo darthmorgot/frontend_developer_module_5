@@ -1,9 +1,9 @@
 import {useState} from 'react';
-import OrderForm from '../../blocks/order-form/order-form.jsx';
-import CatalogProducts from '../../blocks/catalog-products/catalog-products.jsx';
+import OrderForm from '@/components/blocks/order-form/order-form.jsx';
+import CatalogProducts from '@/components/blocks/catalog-products/catalog-products.jsx';
 import {Catalog, WarningNoProducts} from './style.js';
-import HiddenTitle from '../../ui/hidden-title/hidden-title.jsx';
-import TitlePage from '../../ui/title-page/title-page.jsx';
+import HiddenTitle from '@/components/ui/hidden-title/hidden-title.jsx';
+import TitlePage from '@/components/ui/title-page/title-page.jsx';
 
 /**
  * Компонент страницы каталога товаров.

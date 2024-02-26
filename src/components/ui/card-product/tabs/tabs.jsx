@@ -1,8 +1,8 @@
 import {useState} from 'react';
-import TabsPanel from './tab-panel/tabs-panel.jsx';
-import TabDescription from './tab-description/tab-description.jsx';
-import TabSpecification from './tab-specification/tab-specification.jsx';
-import TabFeature from './tab-feature/tab-feature.jsx';
+import TabsPanel from '@/components/ui/card-product/tabs/tab-panel/tabs-panel.jsx';
+import TabDescription from '@/components/ui/card-product/tabs/tab-description/tab-description.jsx';
+import TabSpecification from '@/components/ui/card-product/tabs/tab-specification/tab-specification.jsx';
+import TabFeature from '@/components/ui/card-product/tabs/tab-feature/tab-feature.jsx';
 import {StyledTabs, TabsWrapper, TabsItem} from './style.js';
 
 /**

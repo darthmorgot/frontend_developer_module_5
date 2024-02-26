@@ -1,5 +1,5 @@
 import React from 'react';
-import OptionList from '../option-list/option-list.jsx';
+import OptionList from '@/components/ui/card-product/tabs/option-list/option-list.jsx';
 
 /**
  * Компонент блока со свойствами на карточке товара.

@@ -1,7 +1,7 @@
 import React from 'react';
-import Title from '../title/title.jsx';
-import {TitleLevel, TitleSize} from '../title/title-level-size.js';
-import Tabs from './tabs/tabs.jsx';
+import Title from '@/components/ui/title/title.jsx';
+import {TitleLevel, TitleSize} from '@/components/ui/title/title-level-size.js';
+import Tabs from '@/components/ui/card-product/tabs/tabs.jsx';
 import {Card, Image} from './style.js';
 
 /**

@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductSelectionField from './product-selection-field/product-selection-field.jsx';
 import ProductPurchaseField from './product-purchase-field/product-purchase-field.jsx';
-import HiddenTitle from '../../ui/hidden-title/hidden-title.jsx';
+import HiddenTitle from '@/components/ui/hidden-title/hidden-title.jsx';
 import {Section, Form} from './style.js';
 
 /**

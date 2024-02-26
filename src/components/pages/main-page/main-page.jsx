@@ -1,7 +1,7 @@
 import React from 'react';
-import About from '../../blocks/about/about.jsx';
-import AdvantagesList from '../../blocks/advantages-list/advantages-list.jsx';
-import TitlePage from '../../ui/title-page/title-page.jsx';
+import About from '@/components/blocks/about/about.jsx';
+import AdvantagesList from '@/components/blocks/advantages-list/advantages-list.jsx';
+import TitlePage from '@/components/ui/title-page/title-page.jsx';
 
 /**
  * Компонент главной страницы сайта.
