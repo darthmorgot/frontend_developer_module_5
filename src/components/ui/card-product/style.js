@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Img} from '@/components/styled/index.js';
 
 export const Card = styled.div`
   display: grid;
@@ -16,7 +17,7 @@ export const Card = styled.div`
   }
 `;
 
-export const Image = styled.img`
+export const Image = styled(Img)`
   grid-column: 1 / 2;
   grid-row: 1 / 3;
 `;
