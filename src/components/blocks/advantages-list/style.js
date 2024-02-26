@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Ul} from '@/components/styled/index.js';
 
 export const Section = styled.section`
   padding-top: 101px;
@@ -14,13 +15,11 @@ export const Slogan = styled.span`
   line-height: 115%;
 `;
 
-export const List = styled.ul`
+export const List = styled(Ul)`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 0 44px;
-  padding: 0;
-  list-style: none;
 `;
 
 export const ListItem = styled.li`
