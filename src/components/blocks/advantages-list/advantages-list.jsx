@@ -1,7 +1,7 @@
 import React from 'react';
-import HiddenTitle from '../../ui/hidden-title/hidden-title.jsx';
-import AdvantageCard from '../../ui/advantage-card/advantage-card.jsx';
-import Button from '../../ui/button/button.jsx';
+import HiddenTitle from '@/components/ui/hidden-title/hidden-title.jsx';
+import AdvantageCard from '@/components/ui/advantage-card/advantage-card.jsx';
+import Button from '@/components/ui/button/button.jsx';
 import {Section, Slogan, List, ListItem} from './style.js';
 import {AppRoute} from '@/AppRoute.js';
 
