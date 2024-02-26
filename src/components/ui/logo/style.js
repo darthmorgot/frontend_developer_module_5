@@ -15,6 +15,10 @@ const logoStyle = css`
 export const StyledLogo = styled(Link)`
   ${logoStyle}
 
+  &:hover {
+    text-decoration: underline;
+  }
+
   &:focus {
     outline: 1px solid ${props => props.theme.crusta};
     outline-offset: 2px;
