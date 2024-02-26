@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const p = styled.p`
+const P = styled.p`
   margin: 0;
 `;
 
-export default p;
+export default P;
