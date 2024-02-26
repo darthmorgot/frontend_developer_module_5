@@ -5,7 +5,7 @@ import {
   SelectFieldset,
   SelectList,
   ListItem,
-  Label,
+  StyledLabel,
   SpanName,
   Input,
   SpanMark
@@ -32,7 +32,7 @@ function ProductSelectionField({
       <SelectList>
         {products && products.length ? products.map((item, index) => (
             <ListItem key={item.id}>
-              <Label>
+              <StyledLabel>
                 <SpanName>{item.title}</SpanName>
                 <Input className='visually-hidden'
                        name={item.name}
@@ -42,7 +42,7 @@ function ProductSelectionField({
                        onClick={() => slideToSelectProduct(item.id, index)}
                 />
                 <SpanMark></SpanMark>
-              </Label>
+              </StyledLabel>
             </ListItem>
           )
         ) : null}
