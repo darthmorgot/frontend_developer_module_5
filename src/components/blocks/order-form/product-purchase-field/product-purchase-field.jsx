@@ -4,7 +4,7 @@ import {TitleLevel, TitleSize} from '../../../ui/title/title-level-size.js';
 import {
   OrderFieldset,
   Address,
-  Label,
+  StyledLabel,
   HiddenLabelText,
   Input,
   HiddenInput,
@@ -34,10 +34,10 @@ function ProductPurchaseField({price = 0, buy, isDisabled}) {
     <OrderFieldset>
       <Title level={TitleLevel.H3} size={TitleSize.SMALL}>Сделать заказ</Title>
       <Address>
-        <Label>
+        <StyledLabel>
           <HiddenLabelText>Введите адрес доставки</HiddenLabelText>
           <Input value={address} onChange={(e) => handleChangeAddress(e)} required/>
-        </Label>
+        </StyledLabel>
       </Address>
       <ShowPrice>
         <SpanPrice>Цена</SpanPrice>
