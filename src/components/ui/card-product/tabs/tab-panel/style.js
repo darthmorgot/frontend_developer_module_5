@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import {Button} from '@/components/styled/index.js';
 
 export const StyledTabsPanel = styled.div`
   margin-bottom: 11px;
 `;
 
-export const ButtonTabsPanel = styled.button`
+export const ButtonTabsPanel = styled(Button)`
   padding: 10px 10px 8px 12px;
   margin-right: 8px;
   margin-bottom: 5px;
