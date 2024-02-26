@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import {StyledButton} from '../../../button/style.js';
-import {p} from '../../../../styled/index.js';
+import {P} from '@/components/styled/index.js';
+import {Button} from '@/components/styled/index.js';
 
-export const Text = styled(p)`
+export const Text = styled(P)`
   margin-bottom: 14px;
 `;
 
-export const Price = styled(p)`
+export const Price = styled(P)`
   width: fit-content;
   padding: 4px 8px;
   background-color: ${props => props.theme.pattensBlue};
@@ -19,7 +19,7 @@ export const WrapperPriceDescription = styled.div`
   justify-content: space-between;
 `;
 
-export const DescriptionButton = styled(StyledButton)`
+export const DescriptionButton = styled(Button)`
   width: auto;
   padding: 0;
   margin: 0;
