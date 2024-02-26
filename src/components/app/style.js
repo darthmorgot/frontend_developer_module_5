@@ -220,22 +220,9 @@ export const GlobalStyle = createGlobalStyle`
     padding-right: 20px;
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-
   a {
     color: inherit;
     text-decoration: none;
-  }
-
-  button {
-    color: inherit;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
   }
 
   .visually-hidden:not(:focus, :active),
