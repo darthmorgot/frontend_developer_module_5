@@ -12,9 +12,12 @@ export const Anchor = styled(Link)`
   line-height: 150%;
   cursor: pointer;
 
+  &:hover {
+    text-decoration: underline;
+  }
+
   &:focus {
     outline: 1px solid ${props => props.theme.crusta};
     outline-offset: 2px;
   }
-}
 `;
