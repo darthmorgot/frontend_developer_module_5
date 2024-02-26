@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import {StyledButton} from '../../../ui/button/style.js';
+import {StyledButton} from '@/components/ui/button/style.js';
+import {Label} from '@/components/styled/index.js';
 
 export const OrderFieldset = styled.fieldset`
   padding: 23px 20px 20px 19px;
@@ -19,9 +20,7 @@ export const Address = styled.div`
   margin-bottom: 17px;
 `;
 
-export const Label = styled.label`
-  display: block;
-`;
+export const StyledLabel = styled(Label)``;
 
 export const HiddenLabelText = styled.span.attrs({className: 'visually-hidden'})``;
 
@@ -66,6 +65,8 @@ export const Output = styled.output`
 `;
 
 export const SubmitButton = styled(StyledButton).attrs({type: 'submit'})`
+  border: none;
+
   &:disabled {
     opacity: 0.5;
     cursor: auto;
