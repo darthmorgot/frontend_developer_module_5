@@ -1,6 +1,32 @@
 import {createGlobalStyle} from 'styled-components';
+import regularWoff2 from 'Fonts/Inter-Regular.woff2';
+import regularWoff from 'Fonts/Inter-Regular.woff';
+import boldWoff2 from 'Fonts/Inter-Bold.woff2';
+import boldWoff from 'Fonts/Inter-Bold.woff';
 
 export const GlobalStyle = createGlobalStyle`
+  // fonts
+  @font-face {
+    font-family: "Inter";
+    src:
+      url(${regularWoff2}) format("woff2"),
+      url(${regularWoff}) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    src:
+      url(${boldWoff2}) format("woff2"),
+      url(${boldWoff}) format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  // end fonts
+
   // normalize
   html {
     line-height: 1.15;
