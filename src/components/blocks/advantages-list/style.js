@@ -3,7 +3,7 @@ import {Ul} from '@/components/styled/index.js';
 
 export const Section = styled.section`
   padding-top: 101px;
-  padding-bottom: 108px;
+  padding-bottom: 100px;
 `;
 
 export const Slogan = styled.span`
