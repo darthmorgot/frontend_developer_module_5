@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {P} from '@/components/styled/index.js';
 
 export const Section = styled.section`
   min-height: 197px;
@@ -57,6 +58,4 @@ export const Category = styled.span`
   }};
 `;
 
-export const Description = styled.p`
-  margin: 0;
-`;
+export const Description = styled(P)``;
