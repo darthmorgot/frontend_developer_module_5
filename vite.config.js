@@ -16,6 +16,9 @@ export default defineConfig({
           if (/png|jpe?g|svg|webp|gif|tiff|bmp|ico/i.test(extType)) {
             extType = 'img';
           }
+          if (/woff2|woff/i.test(extType)) {
+            extType = 'fonts';
+          }
           return `assets/${extType}/[name]-[hash][extname]`;
         },
         chunkFileNames: 'assets/js/[name]-[hash].js',
@@ -33,7 +36,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
-      'Images': path.resolve(__dirname, './src/assets/img')
+      'Images': path.resolve(__dirname, './src/assets/img'),
+      'Fonts': path.resolve(__dirname, './src/assets/fonts'),
     }
   }
 })
