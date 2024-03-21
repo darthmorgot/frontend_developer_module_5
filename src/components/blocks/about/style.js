@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import aboutImage from 'Images/back.png';
+import {P} from '@/components/styled/index.js';
 
 export const Section = styled.section`
   background-color: ${props => props.theme.pattensBlue};
@@ -22,6 +23,4 @@ export const TextWrapper = styled.div`
   }
 `;
 
-export const Description = styled.p`
-  margin: 0;
-`;
+export const Description = styled(P)``;
