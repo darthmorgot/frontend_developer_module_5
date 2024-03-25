@@ -87,7 +87,7 @@ const products = [
     name: 'beef-thigh-flesh',
     checked: false,
     about: 'Мякоть бедра - это жестковатое мясо, но очень диетическое и прекрасно подходит для поклонников здорового питания. Мясо можно запечь или потушить с овощами. Все бычки на ферме Эдуарда Васильева выращиваются на натуральном корме.',
-    image: ProductImages[`${ImagePath}photo-product-3.webp`].default,
+    image: ProductImages[`${ImagePath}photo-product-3.jpg`].default,
     price: 847,
     weight: 500,
     spec: [
@@ -125,7 +125,7 @@ const products = [
     name: 'chicken-breast-on-the-bone',
     checked: false,
     about: 'Мясо грудки считается самым диетическим. Грудку можно отваривать, тушить с овощами, запекать под сыром, обжаривать в соусе. Курицы на ферме Рошаля живут на свободном выгуле и питаются качественным сбалансированным комбикормом, поэтому их мясо мягкое и натуральное.',
-    image: ProductImages[`${ImagePath}photo-product-4.webp`].default,
+    image: ProductImages[`${ImagePath}photo-product-4.jpg`].default,
     price: 830,
     weight: 1000,
     spec: [
@@ -163,7 +163,7 @@ const products = [
     name: 'drumstick-chicken',
     checked: false,
     about: 'Куриные голени – прекрасный выбор для запекания. Мясо получается особенно нежным, сочным и вкусным. Куриные голени считаются диетическим продуктом, но при этом они весьма питательны. Мясо содержит белки, аминокислоты, железо, магний, витамины группы В и А. Идеально сочетание универсальности в приготовлении, пользы для организма и вкусовых качеств! Мясо выращенной на ферме птицы отличается высоким качеством и чистотой состава. Кур выращивают на натуральных кормах без использования антибиотиков и гормонов роста.',
-    image: ProductImages[`${ImagePath}photo-product-5.webp`].default,
+    image: ProductImages[`${ImagePath}photo-product-5.jpg`].default,
     price: 400,
     weight: 500,
     spec: [
