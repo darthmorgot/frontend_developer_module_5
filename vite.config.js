@@ -1,10 +1,22 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
+import {ViteImageOptimizer} from 'vite-plugin-image-optimizer';
 import path from 'path';
 
 export default defineConfig({
-  plugins: [react(), svgr()],
+  plugins: [
+    react(),
+    svgr(),
+    ViteImageOptimizer({
+      jpg: {
+        quality: 75,
+      },
+      png: {
+        quality: 75,
+      }
+    })
+  ],
   build: {
     rollupOptions: {
       input: {
