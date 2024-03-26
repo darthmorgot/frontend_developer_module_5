@@ -1,21 +1,52 @@
-import { defineConfig } from 'vite';
+import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
 import {ViteImageOptimizer} from 'vite-plugin-image-optimizer';
+import viteImagemin from '@vheemstra/vite-plugin-imagemin';
+import imageminWebp from 'imagemin-webp';
 import path from 'path';
 
 export default defineConfig({
   plugins: [
     react(),
-    svgr(),
+    svgr({
+      svgrOptions: {
+        plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx'],
+        svgoConfig: {
+          plugins: [
+            {
+              name: 'preset-default',
+              params: {
+                overrides: {
+                  removeViewBox: false,
+                },
+              },
+            },
+          ],
+        },
+      },
+    }),
     ViteImageOptimizer({
+      test: /\.(gif|tiff|webp|svg|avif)$/i,
       jpg: {
         quality: 75,
       },
       png: {
         quality: 75,
       }
-    })
+    }),
+    viteImagemin({
+      plugins: {
+        jpg: imageminWebp(),
+        png: imageminWebp(),
+      },
+      makeWebp: {
+        plugins: {
+          jpg: imageminWebp(),
+          png: imageminWebp(),
+        },
+      },
+    }),
   ],
   build: {
     rollupOptions: {
