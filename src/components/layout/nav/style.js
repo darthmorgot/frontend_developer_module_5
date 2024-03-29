@@ -14,6 +14,7 @@ export const Anchor = styled(Link)`
 
   &:hover {
     text-decoration: underline;
+    text-underline-offset: 5px;
   }
 
   &:focus {
