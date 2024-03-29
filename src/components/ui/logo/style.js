@@ -17,6 +17,7 @@ export const StyledLogo = styled(Link)`
 
   &:hover {
     text-decoration: underline;
+    text-underline-offset: 8px;
   }
 
   &:focus {
