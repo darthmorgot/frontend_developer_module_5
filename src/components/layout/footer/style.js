@@ -9,7 +9,7 @@ export const FooterWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 10px;
+  padding-top: 9px;
 `;
 
 export const FooterCopyright = styled(P)``;
