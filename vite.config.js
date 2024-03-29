@@ -4,6 +4,7 @@ import svgr from 'vite-plugin-svgr';
 import {ViteImageOptimizer} from 'vite-plugin-image-optimizer';
 import viteImagemin from '@vheemstra/vite-plugin-imagemin';
 import imageminWebp from 'imagemin-webp';
+import IconSpritePlugin from './plugins/vite-plugin-icon-sprite.js';
 import path from 'path';
 
 export default defineConfig({
@@ -47,6 +48,7 @@ export default defineConfig({
         },
       },
     }),
+    IconSpritePlugin(),
   ],
   build: {
     rollupOptions: {
@@ -78,9 +80,9 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
-      'Images': path.resolve(__dirname, './src/assets/img'),
-      'Fonts': path.resolve(__dirname, './src/assets/fonts'),
+      '@': path.resolve(__dirname, 'src'),
+      'Images': path.resolve(__dirname, 'src/assets/img'),
+      'Fonts': path.resolve(__dirname, 'src/assets/fonts'),
     }
   }
 })
