@@ -5,7 +5,7 @@ import {SwiperSlide} from 'swiper/react';
 export const Section = styled.section``;
 
 export const ProductList = styled(Swiper)`
-  height: 735px;
+  height: 729px;
   margin: 0;
   padding: 0;
   list-style: none;
