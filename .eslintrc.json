@@ -31,7 +31,7 @@
     "jsx-a11y",
     "jsdoc"
   ],
-  "ignorePatterns": ["vite.config.js"],
+  "ignorePatterns": ["vite.config.js", "vite-plugin-icon-sprite.js"],
   "rules": {
     "react-refresh/only-export-components": [
       "warn",
