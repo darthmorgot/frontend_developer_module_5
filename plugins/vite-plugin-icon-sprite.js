@@ -31,7 +31,7 @@ export default function IconSpritePlugin() {
       svgIcons += svgContent;
     }
 
-    const sprite = `<?xml version="1.0" encoding="utf-8"?><svg viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>:root>svg{display:none}:root>svg:target{display:block}</style>${svgIcons}</svg>`;
+    const sprite = `<?xml version="1.0" encoding="utf-8"?><svg viewBox="0 0 56 56" width="56" height="56" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style>:root>svg{display:none}:root>svg:target{display:block}</style>${svgIcons}</svg>`;
 
     await writeFile(path.resolve(PROCESS_CWD, PATH_DIR_IMAGES + '/sprite.svg'), sprite);
 
