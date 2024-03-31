@@ -1,4 +1,12 @@
-import {ImagePath, IconImages} from '@/imageConfig.js';
+import {ImagePath, IconSpriteImage} from '@/imageConfig.js';
+
+const PATH_SPRITE_IMAGE = IconSpriteImage[`${ImagePath}sprite.svg`].default;
+const ICONS = {
+  'icon-eat': PATH_SPRITE_IMAGE + '#icon-eat',
+  'icon-garbage': PATH_SPRITE_IMAGE + '#icon-garbage',
+  'icon-sprout': PATH_SPRITE_IMAGE + '#icon-sprout',
+  'icon-no-meat': PATH_SPRITE_IMAGE + '#icon-no-meat',
+};
 
 /**
  * @file Моковые данные для блока преимущев на главной странице.
@@ -10,7 +18,7 @@ const features = [
     category: 'Фермерские продукты',
     title: 'Еда намного вкуснее',
     description: 'Домашняя колбаса из мяса, соли и специй и колбаса <br/> из магазина — два настолько разных продукта, <br/> что они даже не родственники',
-    icon: IconImages[`${ImagePath}icon-eat.svg`].default,
+    icon: ICONS['icon-eat'],
     isNegative: false
   },
   {
@@ -18,7 +26,7 @@ const features = [
     category: 'Магазинные продукты',
     title: 'Просроченные продукты',
     description: 'Из-за большого количество товара сотрудники магазинов не успевают своевременно производить замену товара',
-    icon: IconImages[`${ImagePath}icon-garbage.svg`].default,
+    icon: ICONS['icon-garbage'],
     isNegative: true
   },
   {
@@ -26,7 +34,7 @@ const features = [
     category: 'Фермерские продукты',
     title: 'Натуральные продукты',
     description: 'Поставляем местные органические продукты выращенные без пестицидов и химических удобрений.',
-    icon: IconImages[`${ImagePath}icon-sprout.svg`].default,
+    icon: ICONS['icon-sprout'],
     isNegative: false
   },
   {
@@ -34,7 +42,7 @@ const features = [
     category: 'Магазинные продукты',
     title: 'Некачественное мясо',
     description: 'Мясные полуфабрикаты, в которых содержится чрезмерно много натрия, вредных жиров, консервантов',
-    icon: IconImages[`${ImagePath}icon-no-meat.svg`].default,
+    icon: ICONS['icon-no-meat'],
     isNegative: true
   },
 ];
