@@ -8,7 +8,7 @@ export const ImagePath = '/src/assets/img/';
  * Константа, задающая импорт картинок с иконками.
  * @type {Record<string, unknown>}
  */
-export const IconImages = import.meta.glob(['Images/icon-*.svg'], {eager: true});
+export const IconSpriteImage = import.meta.glob(['Images/sprite.svg'], {eager: true});
 
 /**
  * Константа, задающая импорт картинок товаров.
