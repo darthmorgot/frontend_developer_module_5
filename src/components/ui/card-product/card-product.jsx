@@ -2,7 +2,7 @@ import React from 'react';
 import Title from '@/components/ui/title/title.jsx';
 import {TitleLevel, TitleSize} from '@/components/ui/title/title-level-size.js';
 import Tabs from '@/components/ui/card-product/tabs/tabs.jsx';
-import {Card, Image} from './style.js';
+import {Card, Picture, Source, Image} from './style.js';
 
 /**
  * Компонент элемента списка товаров с карточкой товара.
@@ -13,12 +13,15 @@ import {Card, Image} from './style.js';
 function CardProduct({product}) {
   return <Card>
     <Title level={TitleLevel.H2} size={TitleSize.MEDIUM}>{product.title}</Title>
-    <Image
-      src={product.image}
-      width="248"
-      height="248"
-      alt="Картинка товара"
-    />
+    <Picture>
+      <Source srcSet={product.image.imageWebp} type="image/webp"/>
+      <Image
+        src={product.image.fallback}
+        width="248"
+        height="248"
+        alt="Картинка товара"
+      />
+    </Picture>
     <Tabs item={product}/>
   </Card>;
 }
