@@ -2,8 +2,7 @@ import {defineConfig} from 'vite';
 import react from '@vitejs/plugin-react';
 import svgr from 'vite-plugin-svgr';
 import {ViteImageOptimizer} from 'vite-plugin-image-optimizer';
-import viteImagemin from '@vheemstra/vite-plugin-imagemin';
-import imageminWebp from 'imagemin-webp';
+import { imagetools } from 'vite-imagetools';
 import IconSpritePlugin from './plugins/vite-plugin-icon-sprite.js';
 import path from 'path';
 
@@ -36,18 +35,7 @@ export default defineConfig({
         quality: 75,
       }
     }),
-    viteImagemin({
-      plugins: {
-        jpg: imageminWebp(),
-        png: imageminWebp(),
-      },
-      makeWebp: {
-        plugins: {
-          jpg: imageminWebp(),
-          png: imageminWebp(),
-        },
-      },
-    }),
+    imagetools(),
     IconSpritePlugin(),
   ],
   build: {
