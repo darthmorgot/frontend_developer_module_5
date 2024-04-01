@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import aboutImage from 'Images/back.png';
+import aboutImagePng from 'Images/back.png';
+import aboutImageWebp from 'Images/back.png?format=webp';
 import {P} from '@/components/styled/index.js';
 
 export const Section = styled.section`
@@ -9,7 +10,10 @@ export const Section = styled.section`
 export const AboutWrapper = styled.div`
   padding-top: 184px;
   padding-bottom: 183px;
-  background-image: url(${aboutImage});
+  background-image: image-set(
+    url(${aboutImageWebp}) type("image/webp") 1x,
+    url(${aboutImagePng}) 1x
+  );
   background-repeat: no-repeat;
   background-position: 97.1% 37px;
 `;
