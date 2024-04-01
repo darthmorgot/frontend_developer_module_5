@@ -1,4 +1,9 @@
 import {ImagePath, ProductImages} from '@/imageConfig.js';
+import productImageWebp1 from 'Images/photo-product-1.jpg?w=248&h=248&format=webp&as=srcset';
+import productImageWebp2 from 'Images/photo-product-2.jpg?w=248&h=248&format=webp&as=srcset';
+import productImageWebp3 from 'Images/photo-product-3.jpg?w=248&h=248&format=webp&as=srcset';
+import productImageWebp4 from 'Images/photo-product-4.jpg?w=248&h=248&format=webp&as=srcset';
+import productImageWebp5 from 'Images/photo-product-5.jpg?w=248&h=248&format=webp&as=srcset';
 
 /**
  * @file Моковые данные для проекта.
@@ -11,7 +16,10 @@ const products = [
     name: 'chicken-thigh-fillet',
     checked: false,
     about: 'Филе бедра без кожи и кости. Птица содержится <br/> в свободных птичниках, выращивается на натуральных зерновых кормах, что влияет положительно на вкус мяса. Филейная часть бедра обладает насыщенным вкусом <br/> и мясным ароматом.',
-    image: ProductImages[`${ImagePath}photo-product-1.jpg`].default,
+    image: {
+      fallback: ProductImages[`${ImagePath}photo-product-1.jpg`].default,
+      imageWebp: productImageWebp1,
+    },
     price: 543,
     weight: 700,
     spec: [
@@ -49,7 +57,10 @@ const products = [
     name: 'goose-thigh-fillet',
     checked: false,
     about: 'Филе бедра гуся - это тонко нарезанный продукт, который понравится всем любителям сырокопченых продуктов. Необычный вкус, аппетитный аромат и тонкое послевкусия отличает сырокопченого гуся от других подобных продуктов.',
-    image: ProductImages[`${ImagePath}photo-product-2.jpg`].default,
+    image: {
+      fallback: ProductImages[`${ImagePath}photo-product-2.jpg`].default,
+      imageWebp: productImageWebp2,
+    },
     price: 729,
     weight: 85,
     spec: [
@@ -87,7 +98,10 @@ const products = [
     name: 'beef-thigh-flesh',
     checked: false,
     about: 'Мякоть бедра - это жестковатое мясо, но очень диетическое и прекрасно подходит для поклонников здорового питания. Мясо можно запечь или потушить с овощами. Все бычки на ферме Эдуарда Васильева выращиваются на натуральном корме.',
-    image: ProductImages[`${ImagePath}photo-product-3.jpg`].default,
+    image: {
+      fallback: ProductImages[`${ImagePath}photo-product-3.jpg`].default,
+      imageWebp: productImageWebp3,
+    },
     price: 847,
     weight: 500,
     spec: [
@@ -125,7 +139,10 @@ const products = [
     name: 'chicken-breast-on-the-bone',
     checked: false,
     about: 'Мясо грудки считается самым диетическим. Грудку можно отваривать, тушить с овощами, запекать под сыром, обжаривать в соусе. Курицы на ферме Рошаля живут на свободном выгуле и питаются качественным сбалансированным комбикормом, поэтому их мясо мягкое и натуральное.',
-    image: ProductImages[`${ImagePath}photo-product-4.jpg`].default,
+    image: {
+      fallback: ProductImages[`${ImagePath}photo-product-4.jpg`].default,
+      imageWebp: productImageWebp4,
+    },
     price: 830,
     weight: 1000,
     spec: [
@@ -163,7 +180,10 @@ const products = [
     name: 'drumstick-chicken',
     checked: false,
     about: 'Куриные голени – прекрасный выбор для запекания. Мясо получается особенно нежным, сочным и вкусным. Куриные голени считаются диетическим продуктом, но при этом они весьма питательны. Мясо содержит белки, аминокислоты, железо, магний, витамины группы В и А. Идеально сочетание универсальности в приготовлении, пользы для организма и вкусовых качеств! Мясо выращенной на ферме птицы отличается высоким качеством и чистотой состава. Кур выращивают на натуральных кормах без использования антибиотиков и гормонов роста.',
-    image: ProductImages[`${ImagePath}photo-product-5.jpg`].default,
+    image: {
+      fallback: ProductImages[`${ImagePath}photo-product-5.jpg`].default,
+      imageWebp: productImageWebp5,
+    },
     price: 400,
     weight: 500,
     spec: [
