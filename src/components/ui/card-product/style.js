@@ -17,7 +17,15 @@ export const Card = styled.div`
   }
 `;
 
-export const Image = styled(Img)`
+export const Picture = styled.picture`
   grid-column: 1 / 2;
   grid-row: 1 / 3;
+  height: 248px;
+`;
+
+export const Source = styled.source``;
+
+export const Image = styled(Img)`
+  width: 248px;
+  height: 248px;
 `;
