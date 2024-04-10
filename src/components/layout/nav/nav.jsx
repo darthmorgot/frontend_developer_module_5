@@ -7,10 +7,10 @@ import {StyledNav, Anchor} from './style.js';
 const navElements = [
   {
     to: AppRoute.MAIN,
-    item: <Button key={AppRoute.BUY} link={AppRoute.BUY}>Купить</Button>
+    item: <Button key={AppRoute.ORDER} link={AppRoute.ORDER}>Купить</Button>
   },
   {
-    to: AppRoute.BUY,
+    to: AppRoute.ORDER,
     item: <Anchor key={AppRoute.MAIN} to={AppRoute.MAIN} tabIndex='0'>Главная</Anchor>
   },
 ];
