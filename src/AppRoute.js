@@ -4,6 +4,6 @@
  */
 export const AppRoute = {
   MAIN: '/',
-  BUY: '/buy',
+  ORDER: '/order',
   ERROR404: '*'
 };
