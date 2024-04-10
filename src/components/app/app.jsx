@@ -25,7 +25,7 @@ export default function App() {
         <Routes>
           <Route path={AppRoute.MAIN} element={<PageWrapper/>}>
             <Route index element={<MainPage features={features}/>}/>
-            <Route path={AppRoute.BUY} element={<CatalogPage products={products}/>}/>
+            <Route path={AppRoute.ORDER} element={<CatalogPage products={products}/>}/>
             <Route path={AppRoute.ERROR404} element={<Error404/>}/>
           </Route>
         </Routes>
