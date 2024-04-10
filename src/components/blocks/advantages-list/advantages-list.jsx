@@ -23,7 +23,7 @@ function AdvantagesList({features}) {
             </ListItem>
           ))}
         </List>
-      <Button classButton={'advantages__link'} link={AppRoute.BUY} dataButton={'catalog-page'}>Купить</Button>
+      <Button classButton={'advantages__link'} link={AppRoute.ORDER} dataButton={'catalog-page'}>Купить</Button>
     </Section>
   ) : null;
 }
