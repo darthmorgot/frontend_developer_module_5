@@ -1,4 +1,3 @@
-import React from 'react';
 import CardProduct from '@/components/ui/card-product/card-product.jsx';
 import HiddenTitle from '@/components/ui/hidden-title/hidden-title.jsx';
 import {Scrollbar, Mousewheel} from 'swiper/modules';

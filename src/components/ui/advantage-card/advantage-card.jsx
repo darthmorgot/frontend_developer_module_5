@@ -1,4 +1,3 @@
-import React from 'react';
 import Title from '@/components/ui/title/title.jsx';
 import {TitleLevel, TitleSize} from '@/components/ui/title/title-level-size.js';
 import {Section, CardHeader, Category, Description} from './style.js';

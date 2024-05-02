@@ -1,4 +1,3 @@
-import React from 'react';
 import OptionList from '@/components/ui/card-product/tabs/option-list/option-list.jsx';
 
 /**

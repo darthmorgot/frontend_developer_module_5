@@ -1,4 +1,3 @@
-import React from 'react';
 import About from '@/components/blocks/about/about.jsx';
 import AdvantagesList from '@/components/blocks/advantages-list/advantages-list.jsx';
 import TitlePage from '@/components/ui/title-page/title-page.jsx';

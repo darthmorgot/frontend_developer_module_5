@@ -1,4 +1,3 @@
-import React from 'react';
 import Logo from '@/components/ui/logo/logo.jsx';
 import Nav from '@/components/layout/nav/nav.jsx';
 import {StyledHeader, HeaderWrapper} from './style.js';

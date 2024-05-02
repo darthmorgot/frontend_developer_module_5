@@ -1,4 +1,3 @@
-import React from 'react';
 import HiddenTitle from '@/components/ui/hidden-title/hidden-title.jsx';
 import AdvantageCard from '@/components/ui/advantage-card/advantage-card.jsx';
 import Button from '@/components/ui/button/button.jsx';

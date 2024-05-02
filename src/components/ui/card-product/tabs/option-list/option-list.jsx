@@ -1,4 +1,3 @@
-import React from 'react';
 import {Dl, RowWrapper, Dt, Dd} from './style.js';
 
 /**
